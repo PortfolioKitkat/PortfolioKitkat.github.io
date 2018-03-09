@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="AniCode - создание веб-сайтов, наполнение контентом, настройка плагинов JavaScript, а так же создание и настройка сайтов на cms Wordpress.">
+		<meta name="keywords" content="Portfolio front-end developer,портфолио верстальщика,создание сайтов,web design">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+		<title>AniCode</title>
+		<style>
+			@font-face{
+				font-family: 'pirulenregular';
+				src: url(http://www.anicode.in.ua/fonts/pirulen_rg.ttf) format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face{
+				font-family: 'Lato';
+				src: url(http://www.anicode.in.ua/fonts/Lato-Light.ttf) format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face{
+				font-family: 'TrimPoster';
+				src: url(http://www.anicode.in.ua/fonts/TrimPoster-Slim.woff2) format('woff2');
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face{
+				font-family: 'Comfortaa';
+				src: url(http://www.anicode.in.ua/fonts/Comfortaa-Light.ttf) format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			*{
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			body{
+				margin: 0;
+				width: 100vw;
+				height: 100vh;
+				font-family: Comfortaa, Helvetica, Arial, sans-serif;
+				overflow: hidden;
+			}
+			::-webkit-scrollbar{
+				width: 4px;
+			}
+			::-webkit-scrollbar-track{
+				background: #6f6f6f;
+			}
+			::-webkit-scrollbar-thumb{
+				background: #d62929;
+			}
+			#app{
+				display: flex;
+				justify-content: space-between;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				color: #2c3e50;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				transform-style: preserve-3d;
+				perspective: 1000px;
+				background-color: #e6e6e6;
+			}
+			h1,h2{
+				font-weight: normal;
+				margin: 0;
+			}
+			ul{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			p{
+				margin: 0;
+			}
+			img{
+				max-width: 100%;
+				height: auto;
+				border: 0;
+			}
+			.flex{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: space-around;
+				-ms-align-items: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script src="build.js"></script>
+	</body>
+</html>

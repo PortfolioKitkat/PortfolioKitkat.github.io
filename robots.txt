@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /sites/
+
+User-agent: Yandex
+Disallow: /sites/
