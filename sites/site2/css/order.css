@@ -1,0 +1,33 @@
+.header__wrap {
+  width: 100%;
+  height: 50px;
+  background-color: #1b2a35;
+  margin-bottom: 25px; }
+
+.order__form {
+  margin: 0 auto;
+  text-align: center; }
+
+.footer {
+  background: #222;
+  width: 100%;
+  height: 50px; }
+
+.answ__tittle h2 {
+  font-size: 30px;
+  font-weight: bold; }
+
+.tr_order__tittle h1 {
+  text-transform: uppercase;
+  font-size: 40px; }
+
+.tr_order__tittle h2 {
+  font-size: 40px;
+  font-weight: bold; }
+
+.answers_mod-1 {
+  margin-bottom: 70px; }
+
+.footer {
+  margin-bottom: 0;
+  padding-bottom: 0; }

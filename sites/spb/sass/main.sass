@@ -1,0 +1,262 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+html
+	font-size: 18px
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.container
+	max-width: 1070px
+.cl
+	content: ''
+	clear: both
+
+// @font-face
+// 	 font-family: 'Trebuchet MS'
+// 	 src: url('../fonts/TrebuchetMS/TrebuchetMS-Bold.eot')
+// 	 src: url('../fonts/TrebuchetMS/TrebuchetMS-Bold.eot?#iefix') format("embedded-opentype"), url('TrebuchetMS-Bold.woff') format("woff"), url('TrebuchetMS-Bold.ttf') format("truetype"), url('TrebuchetMS-Bold.svg#TrebuchetMS-Bold') format("svg")
+// 	 font-weight: bold
+// 	 font-style: normal
+
+// @font-face
+//   font-family: 'Tahoma-Bold'
+//   src: url('../fonts/TahomaBold/Tahoma-Bold.eot')
+//   src: url('../fonts/TahomaBold/Tahoma-Bold.eot?#iefix') format("embedded-opentype"), url('Tahoma-Bold.woff') format("woff"), url('Tahoma-Bold.ttf') format("truetype"), url('Tahoma-Bold.svg#Tahoma-Bold') format("svg")
+//   font-weight: bold
+//   font-style: normal
+
+
+
+
+h2
+	font-family: 'tahoma-bold', sans-serif
+
+.top__head
+	.top__head-tittle
+		background-color: #ba489f
+
+
+		p
+			color: #fff
+			text-align: center
+			margin-top: 0
+			font-family: "ArialMT"
+			font-size: 1rem
+	h1
+		font-family: 'Trebuchet MS'
+		font-size:  2rem
+		text-align: center
+		line-height: 48px
+		margin: 30px 0 45px
+		text-transform: uppercase
+
+	
+.wrap
+	background-color: #d4d4d4
+
+.article__wrap
+	height: 100%
+
+
+	background-color: #d4d4d4
+	border-top: 1px solid #000  
+	img
+		float: left
+		margin: 0 40px 0 0
+
+.art__tittle
+	h2
+		font-size: 1.333rem
+		font-weight: bold
+		
+.art__content
+	padding-top: 10px
+
+span.item-height
+	font-size: 24px
+	font-weight: bold
+span.item-cost
+	font-size: 30px
+	font-weight: bolder 
+
+
+section.share
+	background: #4aa500
+	margin: 0 auto
+	color: #fff
+	text-align: center
+	margin-right: -15px
+	margin-left: -15px
+	z-index: -1	
+	border-bottom: 5px solid #ffc600
+	h2
+		text-transform: uppercase
+		font-size: 1.667rem
+		font-family: 'Trebuchet MS'
+		margin-top: 0
+		z-index: 999
+
+
+
+.share__form
+	display: flex
+	justify-content: space-around
+	input
+		color: #333	
+		font-size: 1.222rem
+
+		border-radius: 20px
+		text-align: center
+		outline: none
+		width: 280px
+		height: 40px
+		margin-bottom: 20px
+		border: 1px solid #ccc
+
+
+
+.main-btn:hover
+  background-color: #ffb301
+  /* IE9, iOS 3.2+*/
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBzdG9wLWNvbG9yPSIjZmY2ZTAyIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZmY4MDAiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==)
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0, #ff6e02), color-stop(1, #fff800))
+  /* Android 2.3*/
+  background-image: -webkit-linear-gradient(top, #ff6e02 0%, #fff800 100%)
+  /* IE10+*/
+  background-image: linear-gradient(to bottom, #ff6e02 0%, #fff800 100%)
+  background-image: -ms-linear-gradient(top, #ff6e02 0%, #fff800 100%)
+
+
+
+	
+.main-btn
+  border-radius: 20px
+  color: #000
+  text-transform: uppercase
+  font-size: 20px
+  width: 280px
+  outline: none
+  height: 40px
+  border: none
+  cursor: pointer
+  background-color: #ffb301
+  /* IE9, iOS 3.2+*/
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBzdG9wLWNvbG9yPSIjZmZmODAwIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNmZjZlMDIiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==)
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0, rgb(255, 248, 0)), color-stop(1, rgb(255, 110, 2)))
+  /* Android 2.3*/
+  background-image: -webkit-linear-gradient(top, rgb(255, 248, 0) 0%, rgb(255, 110, 2) 100%)
+  /* IE10+*/
+  background-image: linear-gradient(to bottom, rgb(255, 248, 0) 0%, rgb(255, 110, 2) 100%)
+  background-image: -ms-linear-gradient(top, rgb(255, 248, 0) 0%, rgb(255, 110, 2) 100%)
+
+
+.custom_text
+	text-align: center
+	margin: 0 auto
+	h3
+		text-align: center
+		font-size: 24px
+		margin-top: 10px
+		margin-bottom: 17px
+		text-transform: uppercase
+.bb
+	border-bottom: 5px solid #ffc600
+
+.how__work-wrap,.answ-wrap
+	background: #d9e58f
+	text-align: center
+.answ-wrap
+	background: #d9e58f
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+
+.how__work
+	
+	h2
+		font-size: 36px
+		font-family: 'tahoma-bold', sans-serif
+		margin-top: 20px    
+	p
+		font-size: 16px
+		font-family: 'tahoma-bold', sans-serif
+
+
+
+section.answers
+	h2
+		text-align: center
+.tr
+	text-align: left
+
+.item 
+    margin: 0px 70px 42px 70px
+
+
+.footer 
+	background: #d4d4d4
+	text-align: center
+	margin-bottom: 0
+	position: absolute
+	
+	height: auto
+	left: 0
+	right: 0
+	
+	p
+		margin-top: 0
+		padding: 25px 0 5px
+		font-family: "ArialMT"
+
+@import "media" // Всегда в конце

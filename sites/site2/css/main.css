@@ -1,0 +1,328 @@
+@charset "UTF-8";
+body {
+  font-size: 16px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.vp-player-layout .js-playerLayout {
+  top: 21px !important; }
+
+.video__sect {
+  background: url(../img/video_sect/sect_bg.jpg) top center repeat;
+  margin-top: -61px; }
+  .video__sect h2 {
+    color: #fff;
+    padding: 28px;
+    margin-top: 25px;
+    margin-bottom: -42px; }
+
+.ft__tittle h2 {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+.ft__tittle p {
+  text-align: center;
+  padding-bottom: 30px; }
+
+p.course__txt-item {
+  margin: 30px 15px;
+  line-height: 1.6; }
+
+section.who__trains {
+  margin-top: 50px; }
+  section.who__trains h2 {
+    font-weight: bold; }
+
+figcaption.trainer {
+  margin-top: 15px;
+  font-size: 40px;
+  color: #219a3e;
+  font-weight: bold;
+  clear: both; }
+
+.trains-wrap_img {
+  margin: 0 auto;
+  text-align: center;
+  margin: 40px 25px; }
+  .trains-wrap_img > img {
+    border-radius: 50%;
+    border: 3px solid #219a3e; }
+
+.wht_feat li {
+  list-style-type: none;
+  padding: 10px 50px 5px 35px;
+  margin: 0;
+  list-style-type: none;
+  font-size: 16px; }
+  .wht_feat li span {
+    color: #219a3e;
+    font-weight: bold; }
+  .wht_feat li:before {
+    position: absolute;
+    content: "";
+    background: url(../img/who_train/ok.png) no-repeat;
+    width: 29px;
+    height: 29px;
+    left: 110px; }
+
+.wht_feat li > p {
+  padding-left: 60px; }
+
+.wht_feat ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 25px; }
+
+.btn-order {
+  margin: 50px 0; }
+
+.course_feat h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 10px 0px 50px 0px; }
+
+.course_feat .bkgh1 {
+  margin: 0 auto;
+  width: 500px; }
+
+.course_feat {
+  margin: 0 auto; }
+
+.s5__b100 .block50 li {
+  list-style-type: none; }
+
+section.section.s5.train__progr {
+  margin-top: 20px; }
+
+.clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clear {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clear {
+  height: 1%; }
+
+.clear {
+  display: block; }
+
+/* close commented backslash hack */
+.clear_b {
+  padding-bottom: 7px !important; }
+
+.s5__blx li, .s5 .block50 li {
+  list-style-type: none; }
+
+section.hm__cost {
+  background: url(../img/how_cost/bkg2.jpg) 0 0 no-repeat;
+  background-size: cover;
+  z-index: -99; }
+
+section.reviews {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin: 0 auto; }
+
+.otz {
+  background: #fafafa;
+  padding: 29px 35px 29px 0px;
+  margin-bottom: 30px; }
+  .otz h4 {
+    font-weight: bold;
+    padding-bottom: 15px; }
+  .otz p {
+    font-style: italic;
+    padding-left: 150px; }
+  .otz img {
+    float: left;
+    padding: 20px; }
+
+.reviews__tittle {
+  margin: 30px;
+  background: url(../img/reviews/tit_bg.jpg) center;
+  background-size: cover; }
+  .reviews__tittle h2 {
+    font-weight: bold;
+    padding: 30px; }
+
+.author {
+  background: #fff; }
+
+.rev_bl {
+  margin-right: 10px;
+  max-width: 80% !important;
+  margin: 0 auto; }
+
+.col-sm-offset-1.col-sm-2 > img {
+  margin: 25px 15px;
+  padding: 25px 15px; }
+
+section.answers {
+  margin-bottom: 350px; }
+
+.answ__tittle h2 {
+  margin: 80px 0 0; }
+
+.separator {
+  width: 100%;
+  line-height: 20;
+  display: block;
+  height: 17px;
+  z-index: 99;
+  font-size: 18px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8AAAAARCAMAAAAlgjW+AAAAGXRFW…tf6Pur9703u3jo2YiqSImqULuvP8wMzvxYuHhq7QVVof4AqDXz7RxGMo0AAAAASUVORK5CIIA=) 50% 50% no-repeat; }
+
+.separator.mod_1 {
+  margin: 0 0 40px;
+  display: block; }
+
+.dispatch {
+  background: url(../img/form/btn-bg.jpg) center bottom no-repeat;
+  min-height: 200px;
+  background-size: auto;
+  position: relative; }
+
+button.form-btn {
+  display: none;
+  position: absolute;
+  left: 41%;
+  top: 50px;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  width: 280px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px; }
+
+.form-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.form-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.form-btn:hover span {
+  padding-right: 25px; }
+
+.form-btn:hover span:after {
+  opacity: 1;
+  right: 0; }
+
+#vk_groups {
+  position: -webkit-sticky;
+  position: sticky;
+  float: right;
+  text-align: right;
+  top: 16250px;
+  left: 10px;
+  z-index: 9999; }
+
+.subscribe {
+  background: url(../img/subscribe/subscribe_bg.jpg) 0 center no-repeat; }
+
+.subs-wrap {
+  margin: 0 auto;
+  text-align: center; }
+
+.btn-sbs {
+  background-image: none;
+  background-color: #df361e;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  border-radius: 4px;
+  height: 32px;
+  text-align: center;
+  width: 150px;
+  border: 0;
+  padding: 0 !important;
+  display: inline-block;
+  background-origin: border-box;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 15px; }
+
+button.accordion {
+  position: relative;
+  padding-right: 25px; }
+
+button.accordion:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 22px;
+  display: block;
+  z-index: 99;
+  top: 12px;
+  bottom: 0;
+  left: 10px;
+  background-size: 8px 22px;
+  background: url(../img/answers/ic_acc.png) no-repeat center; }
+
+.text_les {
+  padding: 25px 25px; }
+
+.text_right {
+  text-align: right;
+  padding-right: 50px; }
+
+.text_les_sub {
+  padding-bottom: 20px; }
+
+.banner__wrap {
+  width: 500px;
+  height: 500px;
+  background-color: #ccc;
+  background: url(../img/banner/baner.jpg) center center no-repeat; }
+
+.banner__img {
+  display: block;
+  background: url(../img/banner/baner.jpg) center center no-repeat;
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-size: 250px 220px;
+  z-index: 99; }
+
+.banner-img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border: 1px solid black;
+  padding: 10px; }
+
+.banner-img {
+  background: #fff url(../img/banner/baner.png) 0 0 no-repeat;
+  background-size: cover;
+  z-index: 99;
+  width: 250px;
+  height: 250px; }

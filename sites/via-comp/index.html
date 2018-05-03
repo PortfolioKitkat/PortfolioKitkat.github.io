@@ -1,0 +1,941 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="ru">
+ <!--<![endif]-->
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WTLGTVD');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ABC Клиника</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
+    <script src="js/cookies.js"></script>
+    <script>
+        var currentDate = new Date(),
+            userTime = getCookie('user_timepoint');
+
+        if (!userTime) {
+            setCookie('user_timepoint', currentDate.getTime(), {expires: 200*24*60*60});
+            userTime = currentDate.getTime();
+        }
+        var nowDate = new Date(); //Текущая дата и время в мил. секундах
+        var diff = 6*24*60*60*1000 - nowDate.getTime() + (+userTime); // конечная дата с учетом времени первого входа, взятого из cookie
+        diff = Math.floor(diff / 1000); //Получаем секунды
+    </script>
+    <!-- Google Analytics counter -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-77542168-18', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+
+        /* Accurate bounce rate by time */
+        if (!document.referrer ||
+            document.referrer.split('/')[2].indexOf(location.hostname) != 0)
+            setTimeout(function(){
+                ga('send', 'event', 'Новый посетитель', location.pathname);
+            }, 15000);
+    </script>
+    <!-- /Google Analytics counter -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTLGTVD" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="top"></div>
+    <div class="outer">
+        <div class="above-the-menu"></div>
+        <header class="menu-upper">
+            <div class="menu-upper-white">
+                <div class="inner clearfix">
+                    <div class="logo-and-underlogo">
+                        <a href="#top" class="logo"><img src="img/logo.jpg" alt=""></a>
+                    </div>
+                    <p class="header-description">Клиника пластической хирургии</p>
+                    <div class="header-red-line"></div>
+                    <div class="header-address-time">
+                        <img class="header-pin" src="img/header_pin.png" alt="">
+                        <p class="header-near-pin">
+                            Москва, м. Достоевская, <br>
+                            3-й Самотечный переулок, д. 21 <br class="header-br">
+                            пн-сб с 9:00 до 21:00
+                        </p>
+                    </div>
+                    <div class="header-tel">
+                        <a href="tel:+74956848387" class="header-tel-a comagic_phone_link1">+7 (495) <span>320-47-71</span></a>
+                        <a href="#callback" class="header-callback-a fancybox">Обратный звонок</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner">
+                    <a href="#top" class="menu-a first scrollingto" style="width: 112px;text-align:center;">Главная</a>
+                    <div class="menu-line"></div>
+					 <a href="#price" class="menu-a scrollingto" style="width: 112px;">Услуги</a>
+                    <div class="menu-line"></div>
+                    <a href="#doctors_" class="menu-a scrollingto" style="width: 112px;">Врачи</a>
+                    <div class="menu-line"></div>
+                    <a href="#block_12" class="menu-a scrollingto" style="width: 112px;">Отзывы</a>
+                    <div class="menu-line"></div>
+                    <a href="#block_13" class="menu-a scrollingto last" style="width: 112px;">Контакты</a>
+                </div>
+            </div>
+        </header>
+        <header class="menu-mobile">
+            <div class="inner clearfix">
+                <div class="header-gamburger-mobile">
+                    <div class="low-res-nav">
+                        <div class="gamburger">
+                            <div class="hamb-black-long"></div>
+                            <div class="hamb-white"></div>
+                            <div class="hamb-black-short"></div>
+                            <div class="hamb-white"></div>
+                            <div class="hamb-black-medium"></div>
+                        </div>
+                    </div>
+                    <div class="navi" id="razdel-nav">
+                         <a href="#price" class="menu-a scrollingto">Услуги</a>
+                        <div class="menu-a-line"></div>
+                        <a href="#docs" class="menu-a scrollingto">Врачи</a>
+                        <div class="menu-a-line"></div>
+                        <a href="#block_12" class="menu-a scrollingto">Отзывы</a>
+                        <div class="menu-a-line"></div>
+                        <a href="#block_13" class="menu-a scrollingto last">Контакты</a>
+                    </div>
+                </div>
+                <div class="logo-and-underlogo">
+                    <a href="#top" class="logo scrollingto"><img src="img/logo.jpg" alt=""></a>
+                </div>
+                <a href="tel:+74956848387" class="header-pin-tel-a"><img class="header-pin-tel" src="img/mob_tel.jpg" alt=""></a>
+                <a href="#block_13" class="header-pin-tel-a last scrollingto"><img class="header-pin-tel" src="img/mob_map.jpg" alt=""></a>
+
+                <p class="header-description">Клиника пластической хирургии</p>
+                <div class="header-red-line"></div>
+                <div class="header-address-time">
+                    <p class="header-near-pin">
+                        Москва, м. Достоевская, <br>
+                        3-й Самотечный переулок, д. 21 <br class="header-br">
+                        пн-сб с 9:00 до 21:00
+                    </p>
+                </div>
+                <div class="header-tel">
+                    <a href="tel:+74956848387" class="header-tel-a comagic_phone_link1">+7 (495) <span>684-83-87</span></a>
+                    <a href="#callback" class="header-callback-a fancybox">Обратный звонок</a>
+                </div>
+                <div class="header-gamburger head-mob">
+                    <div class="low-res-nav-2">
+                        <div class="gamburger">
+                            <div class="hamb-black-long"></div>
+                            <div class="hamb-white"></div>
+                            <div class="hamb-black-short"></div>
+                            <div class="hamb-white"></div>
+                            <div class="hamb-black-medium"></div>
+                        </div>
+                    </div>
+                    <div class="navi" id="razdel-nav-2">
+                         <a href="#price" class="menu-a scrollingto">Услуги</a>
+                        <div class="menu-a-line"></div>
+                        <a href="#docs" class="menu-a scrollingto">Врачи</a>
+                        <div class="menu-a-line"></div>
+                        <a href="#block_12" class="menu-a scrollingto">Отзывы</a>
+                        <div class="menu-a-line"></div>
+                        <a href="#block_13" class="menu-a scrollingto last">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="firstscreen" id="block_1">
+            <div class="header-gamburger firsts">
+                <div class="low-res-nav">
+                    <div class="gamburger">
+                        <div class="hamb-black-long"></div>
+                        <div class="hamb-white"></div>
+                        <div class="hamb-black-short"></div>
+                        <div class="hamb-white"></div>
+                        <div class="hamb-black-medium"></div>
+                    </div>
+                </div>
+                <div class="navi" id="razdel-nav">
+                   <a href="#block_5" class="menu-a scrollingto">Диагностика и лечение</a>
+                    <div class="menu-a-line"></div>
+                        <a href="#block_3" class="menu-a scrollingto"><span>Услуги</span></a>
+                        <div class="menu-a-line"></div>
+                        
+                        <a href="#block_13" class="menu-a scrollingto"><span>Контакты</span></a>
+                </div>
+            </div>
+            <div class="inner first-inner">
+                <div class="sub">
+
+                    <h1 class="mainh1"><span>Септопластика</span> Искривление перегородки носа </h1>       
+                    <h3 class="headerxz"> Оплата за консультацию Лор-хирурга вычитается <br> из стоимости выполненной операции!</h3>
+                    <p class="b__2">Указанная цена действительна до конца месяца. <br> Ждем Вас! </p>
+                    <p class="b__3"><u>Малотравматичные операции</u> под местным  <br>
+                    наркозом с использованием <br>
+                    радиоволновых методик, без разрезов. </p>
+                    <h2 class="undermainh1">Запешитесь на ПЕРВИЧНУЮ КОНСУЛЬТАЦИЮ <br>
+                    к специалисту и он ответит на все Ваши вопросы.</h2>
+                </div>
+                <form method="post" action="handlers/contact.php" id="first-form" class="form-callback form-callback-1 form">
+                    <input name="utm_medium" value="Без utm_medium" type="hidden">
+                    <input name="utm_source" value="Без utm_source" type="hidden">
+                    <input name="utm_campaign" value="Без utm_campaign" type="hidden">
+                    <input name="utm_term" value="Без utm_term" type="hidden">
+                    <input name="utm_content" value="Без utm_content" type="hidden">
+                    <input name="cm_title" value="Без cm_title" type="hidden">
+                    <input type="hidden" name="mail" class="input_hid" value="" />
+                    <input name="position" value="Заказ бесплатной консультации (верхняя форма)" type="hidden">
+                    <label class="form-label">
+                        <span><img class="form-input-img" src="img/user-white.png" alt=""></span>
+                        <input class="form-input" type="text" name="name" placeholder="Введите ваше имя">
+                    </label>
+                    <label class="form-label">
+                        <span><img class="form-input-img form-input-tel-img" src="img/phone-white.png" alt=""></span>
+                        <input class="form-input" type="tel" name="number" placeholder="Ваш телефон">
+                    </label>
+                    <div class="form-button-wrapper">
+                        <button class="form-button">
+                            <span class="form-button-p">Записаться</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    <div id="cyst">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="img/img1.png" alt="alt" class="img-responsive top_img"> <br>
+                    <img src="img/human.png" alt="alt" class=" bot_img">
+                </div>
+                <div class="col-md-7">
+                    <p>
+                        <span>Септопластика</span> <br>
+                        хирургическое лечение искривления носовой перегородки. 
+                        При необходимости, может быть этапом последующей одномоментной 
+                        ринопластики с целью коррекции формы наружного носа, что является 
+                        возможностью для пациента восстановить носовое дыхания исправить 
+                        нежелательную форму наружного носа, не проходя повторные курс 
+                        предоперационной подготовки и госпитализации. В ряде случаев, 
+                        для наилучшего эффекта от септопластики, может быть желательно 
+                        сочетание септопластики с вазотомией или конхотомией, при наличии 
+                        изменений носовых раковин. 
+                        <br><br>
+                        <u>
+                        При искривлении в хрящевом отделе, <br>
+                        возможно проведение операции: 
+                        </u>
+                        <br><br>
+                        <i>под местной анестезией, </i>
+                        <i>внутривенным наркозом,</i>
+                        <i>медикаментозной седацией.</i>
+
+                        <b>с использованием радиоволновых методик, без разрезов. <b>
+
+                        <strong>Необходимо послеоперационное наблюдение в течении дня, <br>
+                        <m>в тот же день после операции пациент может лечиться дома,</m>
+                        с последующим наблюдением у ЛОР-врача для удаления тампонов <br>
+                        и контроля заживления. 
+                        <strong>
+                        <br><br>
+                        <in>
+                            В предоперационном периоде возможно ограничиться общим анализом 
+                            крови и коагуллограммой, при необходимости наркоза необходима 
+                            консультация терапевта и анестезиолога. 
+                        </in>
+
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="warp1">
+        <div class="container">
+            <div class="row">
+                <span>Причины искривления перегородки носа</span> <br><br>
+                <u>ВРОЖДЕННЫЕ</u>
+                <p>
+                    <b>Аномалии развития носа,</b> когда одни элементы 
+                    носа начинают расти быстрее остальных, что и приводит в 
+                    конечном итоге к формированию искривления.
+                </p>
+                <u>ПРИОБРЕТЕННЫЕ</u>
+                <p>
+                    <b>Травмы носа.</b> 
+                    Из-за того, что нос является выдающейся 
+                    частью тела, именно он чаще других и страдает 
+                    в различных жизненных ситуациях и первым принимает 
+                    на себя удары жизни. 
+                    Еще одна 
+                    <b>группа этиологических факторов</b>
+                    искривления перегородки связана с 
+                    <b>воспалительными заболеваниями. </b>
+                    Например, различные формы 
+                    <b>ринита</b> 
+                    или 
+                    <b>разрастания лимфоидной ткани</b> 
+                    могут провоцировать адаптивные 
+                    изменения развития различных частей лицевого черепа 
+                    в том числе и носовой перегородки. 
+                    Типичным
+                    <b>примером такого воздействия является аденоидное лицо,</b>
+                    для которого характерно ротовое дыхание, 
+                    и своеобразная вытянутость лицевого черепа. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="warp2">
+        <div class="container">
+            <div class="row">
+               <div class="flex_wrap">
+                   <img src="img/2pornik.jpg" alt="alt" class="ccox">
+                   <div>
+                   <u>ПРИ искривлении в хрящевом и костном отделе</u>
+                   <p>
+                    вмешательство производится с использованием 
+                    <b>эндоскопических и радиоволновых методик, без наружных разрезов. </b>
+                    Необходимо послеоперационное наблюдение в течении дня, в тот же день после 
+                    операции пациент может лечиться дома, с последующим наблюдением 
+                    у ЛОР-врача для удаления тампонов и контроля заживления. 
+                    Если объём операции большой и есть риск послеоперационного кровотечения, 
+                    необходимо нахождение в палате под наблюдением в течении суток. 
+                    Операция проводится под эндотрахеальным наркозом. Необходим полный 
+                    комплекс предоперационного обследования. 
+                   </p>
+                   </div>
+               </div>
+               <u class="top">При сильно выраженном искривлении в хрящевом и костном отделе</u>
+               <p class="top">
+                   с распространением <b>до спинки носа,</b> вмешательство производится с использованием 
+                   <b> эндоскопических и радиоволновых методик. Во время операции производится доступ</b>
+                   к перегородке носа со стороны спинки носа, однако наш подход позволяет ограничиться 
+                   <b>минимальным разрезом со стороны колумеллы</b> пространства между ноздрями. Необходимо послеоперационное наблюдение в течении дня, в тот же день после операции пациент может лечиться дома, с последующим наблюдением у ЛОР-врача для удаления тампонов и контроля заживления. Если объём операции большой и есть риск послеоперационного кровотечения, необходимо нахождение в палате под наблюдением в течении суток. <br>
+                   <b>Операция проводится под эндотрахеальным наркозом. </b>Необходим полный комплекс предоперационного обследования. 
+               </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="primers">
+        <div class="container">
+            <div class="row">
+                    <h2>Наши преимущества:</h2>
+                    <div class="flexs-parent">
+                        <img src="img/1.png" alt="1">
+                        <span>МАЛОТРАВМАТИЧНЫЕ МЕТОДЫ ОПЕРАТИВНОГО ВМЕШАТЕЛЬСТВА</span>
+                    </div>
+                    <p>
+                        В нашей клинике активно используются эндоскопические, радиоволновые и лазерные технологии, позволяющие проводить 
+                        оперативное вмешательство без использования грубых и травматичных консервативных методик, что обеспечивает наилучший 
+                        результат и более комфортный послеоперационный период, с быстрым восстановлением и возможностью вернуться 
+                        в трудоспособности.
+                    </p>
+                    <div class="flexs-parent">
+                        <img src="img/2.png" alt="2">
+                        <span>МАЛОТРАВМАТИЧНЫЕ МЕТОДЫ ОПЕРАТИВНОГО ВМЕШАТЕЛЬСТВА</span>
+                    </div>
+                    <p>
+                        Послеоперационное наблюдение врача необходимо для того, чтобы избежать осложнений. К осложнениям относятся: 
+                        образование рубцовых спаек, развитие нагнаивающихся подслизистых гематом перегородки носа, деформация наружного носа, 
+                        гнойные синуситы и носовые кровотечения. Наша тактика как оперативного вмешательства, так и послоперационного 
+                        наблюдения, позволяет их избежать и уберечь пациента от возможных проблем.
+                    </p>
+                    <div class="flexs-parent">
+                        <img src="img/3.png" alt="3">
+                        <span>МАЛОТРАВМАТИЧНЫЕ МЕТОДЫ ОПЕРАТИВНОГО ВМЕШАТЕЛЬСТВА</span>
+                    </div>
+                    <p>
+                        После операции перегородка носа прошивается специальными силиконовыми пластинами, поддерживающими её в новой форме 
+                        в течении заживления и уберегающими от образования рубцовых спаек. Помимо этого, устанавливаются тампоны на срок до суток, 
+                        которые уберегут пациента от носового кровотечения. Оперативное вмешательство подразумевает нахождение пациента 
+                        в стационарном отделении 1-2 суток, после чего пациент выписывается домой, получает рекомендации по домашнему лечению 
+                        и посещает врача в нашей клинике раз в 3 дня. Через неделю после операции производится удаление силиконовых пластин 
+                        с перегородки и снятие швов.
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="carousel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <u class="heading">Результаты ДО и ПОСЛЕ</u >
+                    <br> <br>
+                    <div class="carousel">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src="img/before_after.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/before_after.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper_form_">
+        <div id="formemail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Первичная консультация хирурга -
+                        <u>гарантия правильного выбора!</u></h2>
+                        <p>Хотите узнать все об операции и ее точную стоимость?</p>
+                        <p>Встретиться с хирургом, определить его профессианальный уровень и степень вашего доверия к нему?</p>
+                        <p>Хотите получить полные ответы по всем интересующим Вас вопросам? </p>
+                        <p class="bld">Запишитесь на бесплатную консультацию СПЕЦИАЛИСТА.</p>
+                        <form method="post" action="handlers/contact-mail.php" id="second-form" class="form-callback form-callback-2 form">
+                            <input name="utm_medium" value="Без utm_medium" type="hidden">
+                            <input name="utm_source" value="Без utm_source" type="hidden">
+                            <input name="utm_campaign" value="Без utm_campaign" type="hidden">
+                            <input name="utm_term" value="Без utm_term" type="hidden">
+                            <input name="utm_content" value="Без utm_content" type="hidden">
+                            <input name="cm_title" value="Без cm_title" type="hidden">
+                            <input type="hidden" name="mail" class="input_hid" value="" />
+                            <input name="position" value="Заказ бесплатной консультации (E-mail форма)" type="hidden">
+                            <label class="form-label">
+                                <span><img class="form-input-img" src="img/user-white.png" alt=""></span>
+                                <input class="form-input" type="text" name="name" placeholder="Ваше имя">
+                            </label>
+                            <label class="form-label">
+                                <span><img class="form-input-img form-input-tel-img" src="img/phone-white.png" alt=""></span>
+                                <input class="form-input" type="text" name="email" required placeholder="Ваш E-mail">
+                            </label>
+                            <div class="form-button-wrapper">
+                                <button class="form-button">
+                                    <span class="form-button-p">Получить персональный расчет</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="japansclp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="img/sclp.jpg" alt="alt">
+                    <div>
+                        <h2>Японский <u>ультразвуковой нож</u></h2>
+                        <p>
+                            В нашей клинике мы применяем специализированный пьезохирургический аппарат, 
+                            который во время операции заменяет собой обыкновенный скальпель. 
+                            Что позволяет снизить травматичность и добиться прогнозируемого 
+                            и успешного результата.
+                        </p>
+                        <span>Плюсы БЕСКОНТАКТНОЙ хирургии:</span>
+                        <ul>
+                            <li>безболезненность хирургической манипуляции</li>
+                            <li>бескровность</li>
+                            <li>деликатное отношение к мягким тканям нервов, сосудов
+                            уменьшение послеоперационного отека</li>
+                            <li>сокращение времени операции и восстановительного периода</li>
+                            <li>антибактериальный эффект ультразвука</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="questions">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Наиболее частые <u>вопросы и ответы:</u></h2>
+                    <div class="w_wrap">
+                        <span>Что ожидать до, во время и после операции?</span>
+                        <p>
+                            Перед операцией необходим осмотр хирурга, с целью составления плана и тактики лечения. В зависимости от принятых 
+                            совместно с пациентом решений, подбирается необходимый объём вмешательства, комплекс обследования и составляется 
+                            план послеоперационного лечения. Во многих случаях, для достижения оптимального результата и убережения пациента от 
+                            осложнений необходима установка фиксирующих шин на перегородку носа и тампонов. После операции пациенту 
+                            рекомендуется показаться врачу ещё 2-3 раза, для послеоперационного ухода и уверенности в том, 
+                            что достигнут необходимый результат операции.
+                        </p>
+
+                        <span>После операции не остаётся следов?</span>
+                        <p>
+                        В большинстве случаев это так, однако, при высшей категории сложности операции может оставаться тонкий рубец в области 
+                        колумеллы, который будет заметен на фоне загара.
+                        </p>
+                        <span>После операции носовое дыханием может ухудшиться, появиться провал в области носа?</span>
+                        <p>
+                            К сожалению, эти осложнения известны, поэтому наш подход направлен на то, чтобы максимально уберечь пациента от 
+                            неблагоприятных исходов.
+                        </p>
+                        <span>Лечение может помочь справиться с хроническим насморком, гайморитами?</span>
+                        <p>
+                            Отчасти это верно, так как кривая перегородка, затруднение носового дыхания, часто провоцируют данные заболевания. 
+                            Однако порой имеющие место изменения со стороны слизистой оболочки носа и пазух уже имеют настолько выраженный 
+                            характер, что может потребоваться дополнительная операция, в том числе выполняемая одновременно с септопластикой.
+                        </p>
+                        <span>После операции нос более уязвим для травм?</span>
+                        <p>
+                            Нет, но если в случае травмы будет повторное искривление перегородки носа, новая операция окажется гораздо сложнее 
+                            из-за послеоперационных особенностей заживления.
+                        </p>
+                        <span>В течении нескольких недель после операции пациент вынужден ограничивать себя 
+                        в нагрузках и активном образе жизни?</span>
+                        <p>
+                            Да, хоть мы и стремимся к тому, чтобы исключить послеоперационные риски, понимание и ответственность пациента 
+                            за своё здоровье позволяет достичь лучших и безопасных результатов.
+                        </p>
+                        <span>После операции на лице имеются синяки и отёки?</span>
+                        <p>
+                            При септопластике первой и второй категории наружных отёков в большинстве случаев не бывает. Но при выполнении 
+                            операции 3-й категории, возможно наличие синяков и отечности в связи с обширностью зоны операции.
+                        </p>
+                        <span>Искривление перегородки носа, требующее хирургического лечения, может быть только 
+                        после травм?</span>
+                        <p>
+                            Нет. Зачастую искривления перегородки носа проявляются у нас после 20-25 лет, в связи с особенностью роста костей 
+                            и хрящей лица, когда одни структуры прекращают своё развитие раньше других.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="infinitsmpt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                       Наиболее частой <u>причиной постоянного нарушения</u> носового дыхания является деформация 
+                        перегородки носа, костно-хрящевого образования, разделяющей правую и левую его половины. 
+                        Искривление носовой перегородки обычно возникает после травм и в процессе взросления, 
+                        когда в подростковом возрасте происходит неравномерный рост и укрепление костей и хрящей, 
+                        формирующих перегородку носа. Последствия искривления носовой перегородки, 
+                        кроме затруднения носового дыхания, разнообразны и зависят от степени и локализации 
+                        деформации, чаще всего это хронические риниты, храп, синуситы и отиты.
+                    </p>
+                    <p>
+                       <u>Для полноценной диагностики,</u> определения имеющейся сопутствующей патологии и выбора 
+                        тактики лечения, проводится комплексное обследование, включающее риноскопию, 
+                        эндоскопическое исследование и компьютерную томографию. Это позволяет врачу выбрать 
+                        индивидуальный план лечения, оптимальный для конкретного пациента. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="abc_cl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Как проходит операция <u>в «Клинике АВС»</u></h2>
+                    <div class="leftnull">
+                        <span  class="skrv">Лечение искривления носовой перегородки всегда хирургическое.</span> 
+                        <div class="cont">
+                            <u>Наш подход подразумевает комбинацию из эндоскопических, лазерных и радиоволновых методик</u>
+                            <p class="ntop">
+                                позволяющих достигнуть результата, восстановление носового дыхания, с минимальным травматическим воздействием, 
+                                что обеспечивает быстрое выздоровление, возможность вернуться к работе в кратчайшие сроки, избежать осложнений 
+                                и обеспечить для пациента максимальный комфорт в послеоперационном периоде. 
+                            </p>
+                            <p>
+                                Необходимый объём операции формируется на основании анализа состояния отдельных сегментов носовой перегородки, 
+                                костного и хрящевого, и состояния регуляторных механизмов носового дыхания, чью функцию обеспечивают носовые 
+                                раковины. 
+                            </p>
+                        </div>
+                        <div class="cont">
+                            <u>Наш подход подразумевает комбинацию из эндоскопических, лазерных и радиоволновых методик</u>
+                            <p class="ntop">
+                               а наличием искривления не только хрящевого, но и костного отдела.
+                            </p>
+                            <p>
+                                Самое важное – обеспечить не удаление искривлённого отдела перегородки (резекция носовой перегородки по Килиану), 
+                                а его выравнивание (септопластика), что позволяет не только восстановить носовое дыхание, но и уберечь пациента 
+                                от таких грозных осложнений, как носовое кровотечение и послеоперационная деформация наружного носа.
+                            </p>
+                            <p class="bld">Как правило, операция проводится под наркозом, когда пациент спит. </p>
+                        </div>
+                        <article>
+                            Перед операцией необходимо пройти комплексное обследование, куда входят мульти-спиральная компьютерная 
+                            томография лицевого скелета, рентген грудной клетки, анализы крови и мочи, осмотр оториноларинголога 
+                            и терапевта, что позволит подобрать индивидуальный для каждого пациента подход в обеспечении анестезии, хода 
+                            операции и послеоперационного лечения. 
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+
+
+    <div id="price" class="escape">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Стоимость <u>услуг</u></h2>
+
+                    <div class="table_wrapper">
+                        <table class="table">
+                            <tr>
+                                <th>Описание услуги</th>
+                                <th class="right"> Цена, руб.</th>
+                            </tr>
+                            <tr>
+                                <td>Исправление искривления носовой перегородки <u>1 кат. сложности</u></td>
+                                <td class="right">25 000 рублей </td>
+                            </tr>
+                            <tr class="gr">
+                                <td>Исправление искривления носовой перегородки <u>2 кат. сложности</u></td>
+                                <td class="right">31 000 рублей</td>
+                            </tr>
+                            <tr>
+                                <td>Исправление искривления носовой перегородки <u>3 кат. сложности</u></td>
+                                <td class="right">37 000 рублей</td>
+                            </tr>
+                            <tr class="gr">
+                                <td>Прием лечебно-диагностический</td>
+                                <td class="right">1 500 рублей</td>
+                            </tr>
+                            <tr>
+                                <td>Септопластика -1 категория   </td>
+                                <td class="right">30 000 рублей</td>
+                            </tr>
+                            <tr class="gr">
+                                <td>Септопластика -2 категория</td>
+                                <td class="right">33 000 рублей</td>
+                            </tr>
+                            <tr>
+                                <td>Септопластика -3 категория   </td>
+                                <td class="right">46 000 рублей</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="#" class="all"><u>Смотреть</u> полный перечень</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="doctors_column">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="first">
+                        <h2>Наши отоларингологи </h2>
+                        <p>готовы ответить на все Ваши вопросы на первом</p>
+                        <p>консультативном приеме</p>
+                    </div>
+                    <div id="doctors_">
+                        <div>
+                            <img src="img/doc1.png" alt="doctor"> 
+                            <p>
+                                Чехонина <br> Элла Мстиславовна
+                            </p>
+                            <span class="xs_">
+                                Врач-отоларинголог, фониатр, <br>
+                                кандидат медицинских наук. <br>
+                                Заслуженный врач <br>
+                                Российской Федерации
+                            </span>
+                        </div>
+                        <div>
+                            <img src="img/doc2.png" alt="doctor"> 
+                            <p>
+                                Андрияшкин <br> Дмитрий Вячеславович
+                            </p>
+                            <span>
+                                Врач-оториноларинголог, хирург
+                            </span>
+                        </div>
+                    </div>
+                    <h3>Получить индивидуальную консультацию <u>отоларинголога</u></h3>
+
+                    <form method="post" action="handlers/contact.php" id="second-form" class="form-callback form-callback-2 form">
+                            <input name="utm_medium" value="Без utm_medium" type="hidden">
+                            <input name="utm_source" value="Без utm_source" type="hidden">
+                            <input name="utm_campaign" value="Без utm_campaign" type="hidden">
+                            <input name="utm_term" value="Без utm_term" type="hidden">
+                            <input name="utm_content" value="Без utm_content" type="hidden">
+                            <input name="cm_title" value="Без cm_title" type="hidden">
+                            <input type="hidden" name="mail" class="input_hid" value="" />
+                            <input name="position" value="Заказ бесплатной консультации (E-mail форма)" type="hidden">
+                            <label class="form-label">
+                                <span><img class="form-input-img" src="img/user-white.png" alt=""></span>
+                                <input class="form-input" type="text" name="name" placeholder="Введите ваше имя">
+                            </label>
+                            <label class="form-label">
+                                <span><img class="form-input-img form-input-tel-img" src="img/phone-white.png" alt=""></span>
+                                <input class="form-input" type="text" name="number" placeholder="Ваш телефон">
+                            </label>
+                            <div class="form-button-wrapper">
+                                <button class="form-button">
+                                    <span class="form-button-p">Получить индивидуальную консультацию</span>
+                                </button>
+                            </div>
+                        </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="twelfthscreen" id="block_12">
+            <div class="inner">
+                <p class="all-titles twelfth-title" style="font-size: 31px;line-height:1.3;">Наш медицинский центр лицензирован Департаментом <br>здравоохранения города Москвы</p>
+                <div class="twelfth-content">
+                    <div class="twelfth-item">
+                        <a href="img/warranty_1_big.jpg" class="fancybox twelfth-item-img-a"><img src="img/warranty_1.jpg" alt="" class="twelfth-item-img"></a>
+                    </div>
+                    <div class="twelfth-item">
+                        <a href="img/warranty_3_big.jpg" class="fancybox twelfth-item-img-a"><img src="img/warranty_2.jpg" alt="" class="twelfth-item-img"></a>
+                    </div>
+                    <div class="twelfth-item">
+                        <a href="img/warranty_2_big.jpg" class="fancybox twelfth-item-img-a"><img src="img/warranty_3.jpg" alt="" class="twelfth-item-img"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thirteenthscreen" id="block_13">
+            <div class="maps">
+                <div class="map" id="map"> </div>
+                <div class="inner">
+
+                    <div class="map-title-undertitle">
+                        <p class="all-titles map-title" style="font-size: 22px;">Мы располагаемся в 3-х минутах пешком от метро Достоевская и Новослободская</p>
+                        <p class="map-undertitle" style="font-size:14px;">Также предлагаем клиентам <span>бесплатную парковку </span>на территории нашего комплекса!</p>
+                    </div>
+                    <div class="map-white-address-all">
+                        <div class="map-white-address-all-up">
+                            <img src="img/map_logo.jpg" alt="" class="map-bullit">
+                            <p class="map-right-title">Наш адрес: </p>
+                            <p class="map-right-undertitle">Москва, м Достоевская, 3-й Самотечный переулок, д. 21</p>
+                            <p class="map-right-title">Время работы: </p>
+                            <p class="map-right-undertitle">пн-сб, с 9:00 до 21:00</p>
+                        </div>
+                        <div class="map-white-address-all-down">
+                            <img src="img/phone_mob.png" alt="" class="map-tel-img">
+                            <div class="map-down-right">
+                                <a href="tel:+74951627580" class="map-tel-a comagic_phone_link2" style="text-decoration: none;">+7 (495) 162-75-80</a>
+                                <a href="#map-callback" class="map-callback-a fancybox" style="text-decoration:underline;">Обратный звонок</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                     <a href="#privacy" class="header-callback-a fancybox">Политика конфиденциальности</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    </div>
+    
+
+    <div id="callback" class="popup-form">
+        <form method="post" action="handlers/contact.php" id="callback-firstscreen" class="form-callback form">
+            <input name="utm_medium" value="Без utm_medium" type="hidden">
+            <input name="utm_source" value="Без utm_source" type="hidden">
+            <input name="utm_campaign" value="Без utm_campaign" type="hidden">
+            <input name="utm_term" value="Без utm_term" type="hidden">
+            <input name="utm_content" value="Без utm_content" type="hidden">
+            <input name="cm_title" value="Без cm_title" type="hidden">
+            <input type="hidden" name="mail" class="input_hid" value="" />
+            <input name="position" value="Заказ звонка (форма в шапке)" type="hidden">
+            <div class="popup-form-title">Оставьте заявку</div>
+            <div class="popup-form-under-title">и мы свяжемся с вами в течение 5 минут</div>
+            <label class="popup-label">
+                <input class="popup-input" type="text" name="name" placeholder="Введите Ваше имя">
+            </label>
+            <label class="popup-label">
+                <input class="popup-input" type="tel" name="number" placeholder="Введите Ваш телефон">
+            </label>
+            <div class="popup-button-wrapper">
+                <button class="popup-form-button">
+                    <span class="popup-form-button-p">Отправить заявку</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div id="map-callback" class="popup-form">
+        <form method="post" action="handlers/contact.php" id="callback-map" class="form-callback form">
+            <input name="utm_medium" value="Без utm_medium" type="hidden">
+            <input name="utm_source" value="Без utm_source" type="hidden">
+            <input name="utm_campaign" value="Без utm_campaign" type="hidden">
+            <input name="utm_term" value="Без utm_term" type="hidden">
+            <input name="utm_content" value="Без utm_content" type="hidden">
+            <input name="cm_title" value="Без cm_title" type="hidden">
+            <input type="hidden" name="mail" class="input_hid" value="" />
+            <input name="position" value="Заказ звонка (на карте)" type="hidden">
+            <div class="popup-form-title">Оставьте заявку</div>
+            <div class="popup-form-under-title">и мы свяжемся с вами в течение 5 минут</div>
+            <label class="popup-label">
+                <input class="popup-input" type="text" name="name" placeholder="Введите Ваше имя">
+            </label>
+            <label class="popup-label">
+                <input class="popup-input" type="tel" name="number" placeholder="Введите Ваш телефон">
+            </label>
+            <div class="popup-button-wrapper">
+                <button class="popup-form-button">
+                    <span class="popup-form-button-p">Отправить заявку</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div id="write-to-doctor" class="popup-form">
+        <form method="post" action="handlers/contact-doctor.php" id="write-to-doctor-callback" class="form-callback form">
+            <input name="utm_medium" value="Без utm_medium" type="hidden">
+            <input name="utm_source" value="Без utm_source" type="hidden">
+            <input name="utm_campaign" value="Без utm_campaign" type="hidden">
+            <input name="utm_term" value="Без utm_term" type="hidden">
+            <input name="utm_content" value="Без utm_content" type="hidden">
+            <input name="cm_title" value="Без cm_title" type="hidden">
+            <input type="hidden" name="mail" class="input_hid" value="" />
+            <input type="hidden" id="doctor" name="doctor" class="input_hid" value="" />
+            <input name="position" value="Запись на приём к доктору" type="hidden">
+            <div class="popup-form-title">Оставьте заявку</div>
+            <div class="popup-form-under-title">и мы свяжемся с вами в течение 5 минут</div>
+            <label class="popup-label">
+                <input class="popup-input" type="text" name="name" placeholder="Введите Ваше имя">
+            </label>
+            <label class="popup-label">
+                <input class="popup-input" type="tel" name="number" placeholder="Введите Ваш телефон">
+            </label>
+            <div class="popup-button-wrapper">
+                <button class="popup-form-button">
+                    <span class="popup-form-button-p">Отправить заявку</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="privacy">
+        <p class="privacy-p">Сайт уважает и соблюдает законодательство РФ. Также мы уважаем ваше право и соблюдаем конфиденциальность при заполнении, передаче и хранении ваших конфиденциальных сведений.<p>
+        <p class="privacy-p">Мы запрашиваем ваши персональные данные исключительно для информирования об оказываемых услугах сайта.<p>
+        <p class="privacy-p">Персональные данные - это информация, относящаяся к субъекту персональных данных, то есть, к потенциальному покупателю. В частности, это фамилия, имя и отчество, дата рождения, адрес, контактные реквизиты (телефон, адрес электронной почты), семейное, имущественное положение и иные данные, относимые Федеральным законом от 27 июля 2006 года № 152-ФЗ «О персональных данных» (далее – «Закон») к категории персональных данных.<p>
+        <p class="privacy-p">Если Вы разместили ваши контактные данных на сайте, то Вы автоматически согласились на обработку данных и дальнейшую передачу ваших контактных данных менеджерам нашего сайта.<p>
+        <p class="privacy-p">В случае отзыва согласия на обработку своих персональных данных мы обязуемся удалить ваши персональные данные в срок не позднее 3 рабочих дней.</p>
+    </div>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+     
+     <script type="text/javascript" src="js/bootstrap.min.js"></script>  
+
+     <script type="text/javascript" src="owlcarousel/owl.carousel.min.js"></script>  
+
+    
+
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" property="" />
+
+    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+
+    <script src="js/jquery.validate.min.js"></script>
+
+    <script src="js/jquery.inputmask.bundle.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" property="" />
+
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" property="" />
+
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+
+    <script src="js/flipclock.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="js/flipclock.css" property="" />
+
+    <script type="text/javascript" src="js/jqzoom/jquery.jqzoom.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery-scrolltofixed-min.js"></script>
+    
+    <script src="js/main.js"></script>
+
+    <script>
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        margin: 30,
+        loop: true,
+        dots: true,
+        autoplay: true,
+        nav: true,
+        navText: ['<button class="owl_btn left"><img src="img/left__.png" alt="<"></button>',
+         '<button class="owl_btn right"><img src="img/right__.png" alt=">"></button>']
+     }); /* HEADER CAROUSEL END */
+
+</script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter42635119 = new Ya.Metrika({
+                    id:42635119,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/42635119" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</body>
+</html>

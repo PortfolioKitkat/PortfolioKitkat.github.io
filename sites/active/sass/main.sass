@@ -1,0 +1,1215 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+ 
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	// background: #777
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+// CUSTOM
+.w25
+	width: 25%
+
+// HEADER
+.flex-row
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-wrap: wrap
+.top__header
+	height: 74px
+	background: #fff
+
+.header__logo
+	width: 154px
+	margin-left: 150px
+	a
+		background:  url(../img/header/header_logo.png) 0 0 no-repeat
+		background-size: cover
+		display: block
+		background-size: 154px 45px
+		width: 154px
+		height: 45px
+/* menu */
+.top__nav
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		
+		
+		li
+			transition: all .2s
+			cursor: pointer
+			display: inline-block
+			cursor: pointer
+			a
+				font-family: GothamBook
+				text-decoration: none
+				color: #96a6a7
+				font-size: 14px
+				margin-right: 20px
+				display: block
+				text-transform: uppercase
+				font-weight: bold
+				
+				
+				&::last-child
+					margin: 0
+				&:hover
+					text-decoration: underline
+					
+	.nav__icon
+		span
+			background: rgba(0, 0, 0, 1)
+			position: absolute
+			left: 0
+			top: 25px
+			width: 100%
+			height: 4px
+			border-radius: 4px
+	.nav__icon
+		 span
+			display: inline-block
+	.nav__icon
+		width: 36px
+		height: 28px
+		margin-right: 10px
+		position: relative
+		cursor: pointer
+		span
+			&:nth-of-type(1)
+				top: 0
+			&:nth-of-type(2)
+				top: 12px
+			&:nth-of-type(3)
+				bottom: 0
+	.nav__icon
+		&.active
+			span
+				&:nth-of-type(1)
+					-webkit-transform: translateY(12px) rotate(-45deg)
+					transform: translateY(12px) rotate(-45deg)
+				&:nth-of-type(2)
+					display: none
+				&:nth-of-type(3)
+					-webkit-transform: translateY(-12px) rotate(45deg)
+					transform: translateY(-12px) rotate(45deg)
+
+
+
+
+
+
+
+
+/* search */
+.search__form
+	position: relative
+
+
+	input[type="text"]:focus
+		width: 400px
+		z-index: 1
+		border-bottom: 1px solid #BBB
+		cursor: text
+		z-index: 99
+		background: #e2dee0
+		&:hover
+			border-bottom: 1px solid #BBB
+
+	input[type="submit"]
+		height: 74px
+		width: 74px
+		// display: inline-block
+		// float: right
+		// background: #fff url(../img/header/search_ic.png) center center no-repeat
+		text-indent: -10000px
+		border: none
+		position: absolute
+		top: 0
+		z-index: 2
+		opacity: 0.4
+		cursor: pointer
+		transition: opacity .4s ease
+
+	input[type="submit"]:hover
+		opacity: 0.8
+		z-index: -1
+
+	input[type="text"] 
+		height: 74px
+		font-size: 28px
+		display: inline-block
+		font-weight: 100
+		border: none
+		outline: none
+		// color: #555
+		padding: 3px
+		padding-right: 74px
+		width: 0px
+		position: absolute
+		top: 0
+		// right: 0
+		background: none
+		z-index: 3
+		transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000)
+		cursor: pointer
+		background: #e2dee0 url(../img/header/search_ic.png) center center no-repeat
+
+.left__wrapp
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: flex-end
+	align-self: flex-start
+
+
+/* login form */
+.login__form
+	form
+		border: 3px solid #f1f1f1
+		display: none
+.modal	
+
+	input[type=text], input[type=password]
+		width: 70%
+		padding: 12px 20px
+		margin: 8px 0
+		display: inline-block
+		border: 1px solid #ccc
+		box-sizing: border-box
+
+
+	.container1
+		max-width: 600px
+	button
+		background-color: #4CAF50
+		color: white
+		padding: 14px 20px
+		margin: 8px 0
+		border: none
+		cursor: pointer
+		width: 312px
+		height: 74px
+		&:hover
+			opacity: 0.8
+
+	.cancelbtn
+		width: auto
+		padding: 10px 18px
+		background-color: #f44336
+		width: 20%
+
+	span.psw
+		float: right
+		padding-top: 16px
+
+	img.avatar
+		width: 40%
+		border-radius: 50%
+
+	.imgcontainer
+		text-align: center
+		margin: 24px 0 12px 0
+
+		input[type=text], input[type=password]
+			width: 100%
+			padding: 12px 20px
+			margin: 8px 0
+			display: inline-block
+			border: 1px solid #ccc
+			box-sizing: border-box
+
+
+.login-btn
+	display: block
+	height: 74px
+	min-width: 312px
+	background: $accent
+	border: none
+	color: #fff
+	text-transform: uppercase
+	
+	
+	&:after
+		content: ""
+		position: absolute
+		background:  url(../img/header/login_ic.png)  no-repeat
+		top: 28px
+		right: 14%
+		width: 15px
+		height: 17px
+		// right: 0
+		// bottom: 0
+		
+
+//* modal */
+.modal
+	display: none
+	position: fixed
+	z-index: 99
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	overflow: auto
+	background-color: rgb(0,0,0)
+	background-color: rgba(0,0,0,0.4)
+	padding-top: 60px
+
+
+	.modal-content
+		background-color: #fefefe
+		margin: 5px auto
+		border: 1px solid #888
+		width: 80%
+
+	.close
+		position: absolute
+		right: 25px
+		top: 0
+		color: #000
+		font-size: 35px
+		font-weight: bold
+	.close:hover,
+	.close:focus
+		color: red
+		cursor: pointer
+
+.animate
+	-webkit-animation: animatezoom 0.6s
+	animation: animatezoom 0.6s
+@-webkit-keyframes animatezoom 
+		from {-webkit-transform: scale(0)}
+		to {-webkit-transform: scale(1)}
+
+@keyframes animatezoom 
+		from {transform: scale(0)}
+		to {transform: scale(1)}
+
+/* header hero */
+.hero__tittle
+	h1
+		text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15)
+		color: #ffffff
+		font-family: GothamBook
+		font-size: 30px
+		font-weight: 400
+		line-height: 48px
+		padding-top: 60px
+		margin-top: 0
+		margin-bottom: 30px
+.header__hero
+	background: #fff url(../img/header/hero_bg.png) top center no-repeat
+	background-size: cover
+	text-align: center
+
+/* select customization */
+div.custom-select
+		position: relative
+		display: inline-block
+		// margin-right: 30px
+.country__change
+	margin-right: 20px
+	margin-bottom: 30px
+.custom-select
+	z-index: 10
+	select
+		
+		width: 220px 
+		height: 50px
+		display: inline-block
+		border: 1px solid rgba(255, 255, 255, 0.2)
+		padding: 4px 3px 3px 5px
+		margin: 0
+		font: inherit
+		outline: none
+		line-height: 1.2
+		background: rgba(255, 255, 255, 0.1)
+		color: #fff
+		appearance: none
+		-webkit-appearance: none
+		-webkit-border-radius: 25px
+		-moz-border-radius: 25px
+		border-radius: 25px
+		cursor: pointer
+		font-size: 18px
+		font-family: GothamBook
+		padding-left: 30px
+		z-index: 10
+		option
+			background: rgba(74, 62, 48, .8)
+		
+body > header > div.header__hero > label > select > option
+	background: rgba(74, 62, 48, .8)
+
+	// color: rgba(255, 255, 255, 0.1)
+
+.custom-select
+
+	-webkit-border-radius: 0 6px 6px 0
+	-moz-border-radius: 0 6px 6px 0
+	border-radius: 0 6px 6px 0
+
+
+.custom-select:after 
+	content: ""
+	background:  url(../img/header/down-arrow.png) 0 0 no-repeat 
+	position: absolute
+	top: 20px
+	width: 12px
+	height: 8px
+	right: 10px
+	font-size: 60%
+	line-height: 30px
+	padding: 0 10px
+	color: #fff
+	display: block
+	z-index: -5
+
+.alt__search
+	margin-bottom: 30px
+	input
+		border: 1px solid rgba(255, 255, 255, 0.2)
+		background: rgba(255, 255, 255, 0.1)
+		border-radius: 25px
+		width: 472px
+		height: 57px
+		padding: 20px 20px 20px 30px
+		color: #fff
+		outline: none
+	::-webkit-input-placeholder
+		color: #fff
+		font-size: 18px
+		font-family: GothamBook
+
+	:-ms-input-placeholder
+		color:  #fff
+		font-size: 18px
+		font-family: GothamBook
+
+	:-moz-placeholder
+		color:  #fff
+		font-size: 18px
+		font-family: GothamBook
+
+	::-moz-placeholder
+		color:  #fff
+		font-size: 18px
+		font-family: GothamBook
+
+	::focus::-webkit-input-placeholder
+		color: transparent
+	::focus::-moz-placeholder          
+		color: transparent
+	::focus:-moz-placeholder          
+		color: transparent
+	::focus:-ms-input-placeholder 
+		color: transparent
+
+.main__bnt
+		color: #fff
+		text-transform: uppercase
+		background-color: $accent
+		border-radius: 25px
+		border: none
+		outline: none
+		width: 140px
+		height: 60px
+		margin-bottom: 40px
+		font-family: GothamBook
+		font-weight: bold
+		
+		&:hover
+			background-color: darken($accent, 7%)
+
+
+	
+// MAIN Content
+section.main__content 
+	border-bottom: 1px solid #ccc
+.main__content
+	background: #f3f1f2
+
+/* filter__wrap */
+.filter__wrap
+	display: flex
+	justify-content: space-evenly
+	margin-bottom: 45px
+	background: #fff
+	border-bottom: 1px solid #edebec
+	height: 60px
+.group-1__filter
+	margin-left: 15px
+	line-height: 53px
+	a
+		color: #96a6a7
+		text-decoration: none
+		margin-right: 20px
+		text-transform: uppercase
+		font-size: 12px
+		font-family: GothamBook
+		font-weight: bold
+		
+
+
+		&.active
+			color: $accent
+.group-2__filter
+	margin-top: 10px
+	// margin-left: -101px
+	.country__filter
+		position: relative
+		display: inline-block
+		// margin-right: 30px
+
+	.country__filter
+
+		select
+			width: 125px
+			height: 38px
+			display: inline-block
+			border: 1px solid #96a6a7
+			opacity: .5
+			margin: 0
+			font: inherit
+			outline: none
+			line-height: 1.2
+			background: rgba(255, 255, 255, 0.1)
+			-webkit-appearance: none
+			-webkit-border-radius: 20px
+			-moz-border-radius: 20px
+			border-radius: 20px
+			padding: 10px 15px 10px 15px
+			cursor: pointer
+			font-size: 12px 
+			font-family: GothamBook
+			z-index: 10
+			font-weight: bold
+			
+			text-transform: uppercase
+			&:hover
+				color: $accent
+	.country__filter
+		z-index: 5
+
+	.country__filter:after 
+			content: ""
+			background:  url(../img/main/down-arrow.png) 0 0 no-repeat
+			position: absolute
+			top: 15px
+			width: 12px
+			height: 8px
+			right: 0
+			bottom: 0
+			font-size: 60%
+			line-height: 30px
+			padding: 0 10px
+			display: block
+			cursor: pointer
+			pointer-events:none
+			-webkit-border-radius: 0 6px 6px 0
+			-moz-border-radius: 0 6px 6px 0
+			border-radius: 0 6px 6px 0
+			z-index: -1
+	.show__map:after 
+		content: ""
+		background:  url(../img/main/show-map.png) 0 0 no-repeat
+		width: 8px
+		height: 12px
+		position: absolute
+		top: 12px
+		right: 0
+		bottom: 0
+		font-size: 60%
+		line-height: 30px
+		padding: 0 10px
+		display: block
+		cursor: pointer
+		pointer-events:none
+		-webkit-border-radius: 0 6px 6px 0
+		-moz-border-radius: 0 6px 6px 0
+		border-radius: 0 6px 6px 0
+	.no-pointer-events
+		.country__filter
+			&:after
+				content: none
+	.country__filter
+		li
+			display: inline-block
+			list-style-type: none
+		.show__map
+
+.group-3__filter
+	.custom__filter
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		margin: 10px
+		span
+			color: #96a6a7
+			font-family: GothamBook
+			font-size: 12px
+			font-weight: 500
+			text-transform: uppercase
+			margin-top: 8px
+			padding-left: -4px
+			margin-right: 10px
+
+		li
+			list-style-type: none
+			display: inline-block
+			margin-right: 40px
+			padding-right: 10px
+			a
+				text-decoration: none
+				margin-right: 20px
+				cursor: pointer
+
+				&.house
+					content: ""
+					position: absolute
+					background:  url(../img/main/filter_house.png) 0 0 no-repeat
+					background-size: 40px 40px
+					width: 40px
+					height: 40px
+					display: block
+
+.w25__items
+	margin-bottom: 30px
+	.post__item
+		margin-bottom: 30px
+		position: relative
+	.image-container
+		position: relative
+		width: 100%
+		height: 100%
+		&:hover
+			cursor: pointer
+			.after
+				display: block
+				width: 100%
+				height: 100%
+				position: absolute
+				left: 0px
+				top: 0px
+
+		.after
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			display: none
+			color: #FFF
+			z-index: 999
+		.hover__info:hover
+			position: absolute
+			top: 0
+			z-index: 111
+			-webkit-filter: blur(0px) 
+			filter: blur(0px)
+			width: 100%
+			height: 100%
+
+		.hover__info
+
+				background: rgba(136,73,156, .8)
+				height: 100%
+				>a
+					position: absolute
+					text-transform: uppercase
+					
+					text-decoration: none
+					color: #fff
+					border: 2px solid #fff
+					border-radius: 20px
+					padding: 7px 15px 7px 30px
+					right: 24%
+					top: 25%
+					font-family: GothamBook
+					font-size: 12px
+					font-weight: 500
+					// line-height: 48px
+					&:before
+						position: absolute
+						content: ''
+						background:  url(../img/main/search_ic.png) 0 0 no-repeat
+						width: 12px
+						height: 12px
+						left: 13px
+						top: 12px
+
+						
+
+				.br-widget
+					position: absolute
+					right: 43%
+					top: 56%
+					&:after
+						position: absolute
+						content: ''
+						background:  url(../img/main/coments_ic.png) 0 0 no-repeat
+						width: 25px
+						height: 20px
+						right: -50%
+						top: 15%
+
+
+
+	.item__img
+		&-green
+			border-bottom: 3px solid #1baf5d 
+		img
+			width: 100%
+			max-height: 140px
+	.item__icon
+		position: absolute
+		left: 40%
+		top: 42%
+		z-index: 1100
+		
+		img
+			margin-bottom: 20px
+
+	.item__price
+		span
+			position: absolute
+			top: 5px
+			right: 20px
+			background:  #1baf5d
+			border-radius: 20px
+			width: 66px
+			color: #fff
+			padding: 1px 7px 2px 13px
+			vertical-align: middle
+			line-height: 25px
+	.item__descr
+		p
+			margin-top: 30px
+			color: #566375
+			font-family: GothamBook
+			font-size: 14px
+			font-weight: 500
+			line-height: 18px	
+			font-weight: bold
+					
+
+	.item__tittle
+		color: #1baf5d
+		// font-family: Gotham
+		font-size: 12px
+		font-weight: 500
+		text-transform: uppercase
+		text-align: center
+		h4
+			margin-bottom: 0
+
+
+	.item__rating
+		text-align: center
+		display: -webkit-box
+		font-size: 12px
+		padding-left: 80px
+
+		>a
+			text-decoration: none
+			color: #96a6a7
+			font-size: 12px
+			// text-align: center
+			font-weight: bold
+			
+			margin: auto
+.w25__items .item__img img:hover
+	-webkit-filter: blur(5px) 
+	filter: blur(5px)
+	z-index: 99
+
+.hover__wrapp
+	display: none
+	
+.w50__items_wrap
+	background: #fff
+	margin-bottom: 32px
+	.w50-item__img
+		position: relative
+		&-green
+			border-bottom: 3px solid #1baf5d
+		&-orange
+			border-bottom: 3px solid #f19e1f
+		img
+			width: 100%
+	.w50-item__tittle
+		h4
+			position: absolute
+			top: 24%
+			left: 20%
+			text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15)
+			color: #ffffff
+			font-family: GothamMedium
+			font-size: 18px
+			font-weight: 500
+			line-height: 48px
+			text-transform: uppercase
+
+	.w50-item__icon
+		position: absolute
+		z-index: 999
+		left: 36px
+		top: 114px
+	.w50-item__img-rating
+		position: absolute
+		right: 32%
+		top: 34%
+		display: inline-flex
+		a
+			font-size: 14px
+			color: #fff
+			text-decoration: none
+			cursor: pointer
+			line-height: 28px
+	.w50-item__rating
+		padding-top: 15px
+		display: -webkit-inline-flex
+		display: -moz-inline-flex
+		display: -ms-inline-flex
+		display: -o-inline-flex
+		display: inline-flex
+		&-big 
+			a
+				font-size: 16px
+				margin-top: 20px
+	.w50-item__post_tittle
+
+		h4
+			color: #566375
+			font-family: GothamMedium
+			font-weight: bold
+			font-size: 16px
+			font-weight: 700
+			text-transform: uppercase
+			margin: 0
+	.w50-item__author
+		margin-top: 40px
+		float: left
+		padding-left: 19px
+		padding-right: 25px
+		img
+			border: 4px solid #e2dee0
+			border-radius: 50%
+	.w50-item__post_text 
+		p
+			padding: 12px 17px 18px 19%
+			margin: 0
+			color: #566375
+			font-family: GothamBook
+			font-size: 14px
+		a
+			text-decoration: underline
+			cursor: pointer
+			font-family: GothamBook
+			font-weight: 500
+			font-weight: bold
+			color: #566375
+			
+
+
+.load__more-btn
+		width: 119px
+		height: 17px
+		color: #566375
+		
+		font-size: 18px
+		font-weight: 500
+		line-height: 48px
+		text-decoration: underline
+		cursor: pointer
+		display: block
+		background: none
+		border: 0
+
+		// margin-top: 40px
+		padding-bottom: 35px
+		margin: 40px auto 30px auto
+		line-height: normal
+		&:after
+			content: '\2192'
+		a
+			display: block
+			font-weight: bold
+			font-family: GothamBook
+			
+
+.w50__items_wrap
+	.image-container
+			position: relative
+			width: 100%
+			height: 100%
+			&:hover
+				cursor: pointer
+				.after
+					display: block
+					width: 100%
+					height: 100%
+					position: absolute
+					left: 0px
+					top: 0px
+
+			.after
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				display: none
+				color: #FFF
+				z-index: 999
+			.hover__info:hover
+				position: absolute
+				top: 0
+				z-index: 111
+				-webkit-filter: blur(0px) 
+				filter: blur(0px)
+				width: 100%
+				height: 100%
+
+			.hover__info
+				background: rgba(136,73,156, .8)
+				height: 100%
+				>a
+					position: absolute
+					text-transform: uppercase
+					text-decoration: none
+					color: #fff
+					border: 2px solid #fff
+					border-radius: 20px
+					padding: 7px 15px 7px 30px
+					right: 38%
+					top: 25%
+					font-family: GothamBook
+					font-size: 12px
+					font-weight: 500
+					&:before
+						position: absolute
+						content: ''
+						background:  url(../img/main/search_ic.png) 0 0 no-repeat
+						width: 12px
+						height: 12px
+						left: 13px
+						top: 12px
+				.br-widget
+					position: absolute
+					right: 46%
+					top: 52%
+					&:after
+						position: absolute
+						content: ''
+						background:  url(../img/main/coments_ic.png) 0 0 no-repeat
+						width: 25px
+						height: 20px
+						right: -50%
+						top: 15%
+
+
+// OFFER 
+section.offer
+	background: #f3f1f2
+	.offer__tittle
+		margin-bottom: 70px
+		h2
+			margin-top: 88px
+			color: #566375
+			font-family: GothamBook
+			font-size: 22px
+			font-weight: 500
+			line-height: 48px
+			text-align: center
+			font-weight: bold
+			
+		p
+			color: #96a6a7
+			font-family: "GothamBook"
+			font-size: 16px
+			font-weight: 400
+			line-height: 20px
+			text-align: center
+
+.tittle > h3	
+	text-align: center
+	color: #1baf5d
+	font-family: GothamBook
+	font-size: 24px
+	font-weight: 500
+	line-height: 30px
+	font-weight: bold
+	
+
+	
+.tab__wrapper
+	margin-bottom: 150px	
+.tabcontent
+	display: none
+	padding: 6px 12px
+	border-top: none
+	.left__col, .right__col
+		margin-bottom: 100px
+		img
+			float: left
+			padding-top: 7px
+		p
+			padding-left: 95px
+			margin-top: 0
+			color: #566375
+			font-family: "GothamBook"
+			font-size: 14px
+			font-weight: 400
+			line-height: 24px
+
+
+.tablinks
+	position: relative
+	
+.tab
+	overflow: hidden
+	display: flex
+	
+	flex-wrap: nowrap
+	justify-content: center
+	button
+		background-color: inherit
+		float: left
+		border: none
+		outline: none
+		cursor: pointer
+		padding: 14px 16px
+		transition: 0.3s
+		border: 2px solid #9dacad
+		border-radius: 100%
+		margin-right: 65px
+		width: 100px
+		height: 100px
+		&:after
+			content: ""
+			position: absolute
+			top: 47px
+			right: -61px
+			background:  url(../img/offer/border.png) 0 0 no-repeat
+			width: 53px
+			height: 2px
+		&.last::after
+			margin: 0
+			padding: 0
+			background: none !important
+
+		&.active
+			// background-color: #ccc
+			border: 2px solid #1baf5d
+		&:hover
+			background-color: #ddd
+			border: 2px solid #1baf5d
+.off_human
+	background:  url(../img/offer/offer_human.svg) 50% 0 no-repeat
+	width: 104px
+	height: 104px
+	background-size: 100px 100px
+	display: inline-block
+
+
+
+// FOOTER
+.footer__wrapper
+	background:  url(../img/footer/footer_bg.png) top center no-repeat
+	background-size: cover
+.f__subscribe
+	margin-top: 60px
+	margin-bottom: 40px
+	h3
+		text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15)
+		color: #ffffff
+		font-family: GothamBook
+		font-size: 24px
+		font-weight: 500
+		line-height: 30px
+		text-align: center
+.subscribe__field
+	position: relative
+	text-align: center
+	display: inline-block
+	left: 50%
+	transform: translateX(-50%)
+	.input__field
+		margin-bottom: 55px
+
+		input[type="text custom-select"]
+		
+			display: inline-block
+			border: 1px solid rgba(255,255,255,.2)
+			padding: 4px 3px 3px 5px
+			width: 492px
+			height: 60px
+			margin: 0
+			font: inherit
+			outline: 0
+			line-height: 1.2
+			background: rgba(88,85,84,.1)
+			color: #fff
+			-webkit-appearance: none
+			-webkit-border-radius: 30px
+			border-radius: 30px
+			cursor: pointer
+			font-size: 18px
+			font-family: GothamBook	
+			text-align: center
+
+		&:before
+			content: ''
+			position: absolute
+			background:  url(../img/footer/evenl_icn.png) 0 0 no-repeat
+			width: 18px
+			height: 15px
+			top: 23px
+			margin-left: 33px
+					
+	::-moz-placeholder
+		color: #fff
+		padding-left: 70px
+		text-align: left
+
+
+
+	:-ms-input-placeholder
+		color: #fff
+		padding-left: 70px
+		text-align: left
+
+
+	:-moz-placeholder
+		color: #fff
+		padding-left: 70px
+		text-align: left
+
+
+	::-webkit-input-placeholder
+		color: #fff
+		padding-left: 70px
+		text-align: left
+
+
+ input[type=submit]
+	 position: absolute
+	 right: 4px
+	 outline: none
+	 bottom: 53%
+	 width: 120px
+	 height: 50px
+	 box-shadow: 0 2px 0 #c1412e
+	 background-color: #e94e38  
+	 border-radius: 30px
+	 border: none
+	 color: #fff
+	 text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15)
+	 font-family: GothamBook
+	 font-size: 14px
+	 font-weight: 500
+	 text-transform: uppercase
+	 
+	 &:hover
+		 background-color: #e93e36
+.footer__bootom
+	margin-top: 40px
+	border: 0.5px solid rgba(255, 255, 255, .1)
+	-webkit-background-clip: padding-box 
+	background-clip: padding-box 
+	.left__col,.center__col,.right__col
+		padding-top: 34px
+		display: inline-grid
+		h5
+			font-family: GothamBook
+			text-transform: uppercase
+			text-decoration: underline
+			font-size: 16px
+			color: #fff
+			margin-top: 0
+			margin-bottom: 15px
+			font-weight: bold
+		a
+			text-decoration: none
+			color: #c0bebc
+			font-family: GothamBook
+			font-size: 14px
+			&:hover
+				text-decoration: underline
+	.right__col
+		.social__icon
+			-webkit-transform: rotate(0deg)
+			-webkit-transition: -webkit-transform 0.25s ease-in-out
+			&:hover
+				-webkit-transform: rotateZ(360deg)
+				-webkit-transition: -webkit-transform 0.25s ease-in-out
+		.social__btn
+			margin-bottom: 40px
+		h5
+			margin-bottom: 25px
+		li
+			list-style-type: none
+			display: inline-block
+			margin-right: 10px
+		p
+			color: #fff
+				
+@import "media" // Всегда в конце

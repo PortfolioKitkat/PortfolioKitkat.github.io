@@ -1,0 +1,253 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.header__logo
+		margin-left: 30px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.filter__wrap
+		height: auto
+		justify-content: center
+		margin-bottom: 45px
+		flex-direction: column
+		align-items: center
+		margin-bottom: 30px
+		.group-3__filter
+			margin-bottom: 40px
+	.w25__items
+		.item__icon
+			left: 42%
+			top: 44%
+	.w25__items .item__descr p
+		text-align: center
+	.w25__items .image-container .hover__info > a
+		right: 31%
+	.w25__items .item__rating
+		padding-left: 125px
+
+
+	.top__nav 
+		max-width: 1180px
+		height: 80px
+		overflow: hidden
+		order: 3
+		margin-right: 15px
+		margin: 0 8px 0 18px
+		ul
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			background: #ccc
+			width: 100%
+			z-index: 980
+			position: absolute
+			top: 80px
+			left: 0px
+			width: 100%
+			z-index: 980
+			// display: none
+		li, a
+			width: 100%
+	header
+		position: relative
+		z-index: 999
+
+
+	.nav__icon
+			margin-top: 20px
+	 	span
+			display: none
+			z-index: 1000
+			width: 36px
+			height: 28px
+
+	.left__wrapp
+		align-self: flex-start
+	.login-btn
+		width: 100vw
+	.country__change
+		margin-bottom: 20px
+		margin-right: 0
+	.left__wrapp
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-self: flex-start
+	.header__logo
+		flex-grow: 1
+	.subscribe__field input[type=submit]
+		right: 4px
+		bottom: 53.5%
+	.w25__items .image-container .hover__info > a
+		right: 31%
+	.subscribe__field 
+		position: relative
+		text-align: center
+		display: inline-block
+		left: 50%
+		transform: translateX(-50%)
+	.footer__bootom
+		display: flex
+		justify-content: space-around
+		flex-direction: row
+		flex-wrap: wrap
+	.tab button
+		width: 90px
+		height: 90px
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.header__hero
+		margin-top: 100px
+	.top__nav 
+		max-width: 1180px
+		height: 80px
+		overflow: hidden
+		ul
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			background: #ccc
+			width: 100%
+			z-index: 980
+			position: absolute
+			top: 80px
+			left: 0px
+			width: 100%
+			z-index: 980
+			display: none
+		li, a
+			width: 100%
+	header
+		position: relative
+		z-index: 999
+
+
+	.nav__icon
+			margin-top: 20px
+	 	span
+			display: none
+			z-index: 1000
+			width: 36px
+			height: 28px
+	.left__wrapp
+		align-self: flex-start
+	.login-btn
+		width: 100vw
+	.alt__search input
+		width: 220px
+		margin-top: 20px
+	.country__change
+		margin-bottom: 20px
+		margin-right: 0
+
+	.tab button
+		width: 90px
+		height: 90px
+		padding: 10px 10px
+		margin-right: 45px
+		&:after
+			top: 45px
+			right: -45px
+			width: 40px
+	.top__nav
+		order: 0
+	.header__hero
+		margin-top: 80px
+
+	.custom-select select
+		font-size: 14px
+	.alt__search
+		input
+		::-webkit-input-placeholder
+			color: #fff
+			font-size: 14px
+			font-family: GothamBook
+	.hero__tittle h1
+		font-size: 24px
+	.w25__items .image-container .hover__info > a
+		border-radius: 20px
+		padding: 7px 11px 6px 26px
+		right: 27%
+		top: 31%
+		
+	.subscribe__field 
+		position: relative
+		text-align: center
+		display: inline-block
+		left: 50%
+		transform: translateX(-50%)
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 540px)
+	/**/
+
+	.subscribe__field .input__field input[type="text custom-select"]
+		width: 380px
+
+	
+		
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+	.tab button
+		height: 80px
+		width: 80px
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+	button
+	&.tablinks
+		&.last
+			margin-right: 0
+	.tab__wrapper
+		.tab
+			flex-wrap: wrap
+		&:after
+			background: none
+				
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+	.top__nav .nav__icon
+		display: none
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
