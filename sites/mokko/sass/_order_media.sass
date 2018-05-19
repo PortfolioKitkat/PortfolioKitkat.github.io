@@ -1,0 +1,289 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+@media (min-width: 993px) and (max-width: 1199px)
+	/**/
+	.item__total_sum
+		margin-left: 35px
+	.order__item_close
+		margin-left: 0
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.rendered-form
+		display: inline-flex
+		flex-wrap: wrap
+		overflow: hidden
+		justify-content: space-between
+		.field-tel
+			width: 100%
+			position: relative
+			input
+				width: 100%
+		
+		.field-name
+			display: none
+			width: 60%
+			input
+				width: 100%
+		.field-street
+			width: 60%
+			input
+				width: 100%
+		.field-house
+			width: 30%
+			input
+				width: 100%
+		.field-floor, .field-porch
+			width: 30%
+			input
+				width: 100%
+		.field-flat	
+			width: 21%
+			border-bottom: 2px solid #e8e8e8
+			input
+				width: 100% 
+				border-bottom: none
+
+		.field-floor
+			width: 30%
+			text-align: left
+			border-bottom: 2px solid #e8e8e8
+			input
+				width: 100% 
+				border-bottom: none
+
+		.field-porch
+			width: 30%
+			border-bottom: 2px solid #e8e8e8
+			input
+				width: 100% 
+				border-bottom: none
+		.field-lease
+			width: 100%
+			input
+				width: 100% 
+		.field-comment
+			width: 100%
+			input
+				width: 100% 
+	.rendered-form input[type="submit"]
+		margin: 0 auto
+		margin-top: 40px
+	.overlay
+		margin-top: 100px
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.ordering
+		display: block
+	.order__wrapp h1
+		font-size: 40px
+		font-family: Ubuntu-Regular
+
+	.item__total_sum 
+		margin-left: 60px
+	.order__menu_item
+		display: block
+		padding: 35px
+		position: relative
+		h3
+			margin: 0
+			font-size: 30px
+	.order__item_img
+		display: none
+	.order__item_close
+		position: absolute
+		right: 12px
+		top: 28px
+		font-size: 40px
+	.order__item_price
+		float: right
+		font-size: 24px
+		margin-top: 20px
+		span
+			font-size: 30px
+	.order__item_case
+		color: #333333
+		font-family: Ubuntu-Regular
+		font-size: 24px
+		select
+			color: $accent
+			font-family: Ubuntu-Regular
+			font-size: 24px
+	.footer, .back__link
+		display: none
+	.item__total_sum
+		display: none
+		
+	.item__total_sum-m
+		display: block
+		background: #ffeec5
+		font-size: 28px
+		padding: 30px
+		color: #333
+		width: 100vw
+		position: relative
+		left: 50%
+		right: 50%
+		margin-left: -50vw
+		margin-right: -50vw
+		span
+			font-size: 40px
+			font-family: Ubuntu-Bold
+		input
+			float: right
+			background: #f2ac00
+			border: none
+			text-transform: uppercase
+			font-family: Ubuntu-Regular
+			padding: 15px 35px 15px 35px
+			border-radius: 30px
+			font-family: Ubuntu-Bold
+	
+
+
+	.item__total_wrap
+		background: #f5f5f5
+		flex-grow: 1
+		.item__total_promo
+			width: 100%
+
+	.item__total_wrap form input[type=text]
+		width: 90vw
+		height: 67px
+		border-radius: 32px
+		border: 4px solid #e8e8e8
+		background-color: #ffffff
+		position: relative
+		font-family: Ubuntu-Regular
+		font-size: 30px
+	.item__total_wrap form input[type=submit]
+		width: 231px
+		height: 52px
+		border-radius: 30px
+		background-color: #e8e8e8
+		padding: 0px 20px
+		color: #999
+		font-family: Ubuntu-Regular
+		font-size: 30px
+		position: absolute
+		right: 23px
+		margin-top: 7px
+	.item__count
+		.value-button-increase
+			background:  url(../img/order/plus_m.svg) 0 0 no-repeat
+			width: 52px
+			height: 52px
+		.value-button-decrease
+			background:  url(../img/order/minus_m.svg) 0 0 no-repeat
+			width: 52px
+			height: 52px
+	.item__count
+		input#number
+			font-size: 33px
+			width: 33px
+			height: 50px
+	.rendered-form input[type="submit"]
+		display: none
+	.submit__mobile
+		display: block
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+		background-color: #ffeec5
+		text-align: center
+
+		input[type="submit"]
+			padding: 15px 50px
+			margin: 20px
+			width: 90%
+	.order__form
+		flex-grow: 1
+	.item__total_wrap
+		margin-bottom: 80px
+		text-align: center
+		
+	.item__total_wrap form input[type=submit]
+		display: block
+		left: 50%
+		margin-top: 12px
+		margin-bottom: 12px
+	.item__total_wrap form input[type=text]
+		min-width: 320px
+		
+	.item__total_sum-m
+		text-align: center
+	.item__total_sum-m input
+		float: none
+	.item__total_wrap form
+		margin-left: 0
+
+
+
+
+
+
+@media only screen and (max-width : 658px)
+	/**/
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.item__count
+		display: block
+	.order__menu_item 
+		text-align: center
+	.order__item_price 
+		float: none
+	.item__total_sum-m input
+		float: none
+	.item__total_sum-m
+		text-align: center
+
+		
+	
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+	.header__cart-active-m
+		display: none
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

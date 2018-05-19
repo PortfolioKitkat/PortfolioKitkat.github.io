@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/order.min.css">
+</head>
+
+<body>
+    <div class="site__wrapp">
+        <section class="top__line">
+            <div class="container">
+                <div class="top__line_wrap">
+                    <div class="top__line_info">
+                        <div class="adress"><a href="">Проспект Мира 87-б</a></div>
+                        <div class="work-time">
+                            <p>Работаем с 9:00 до 22:00</p>
+                        </div>
+                        <div class="free-ship">
+                            <p>Бесплатная доставка</p>
+                        </div>
+                    </div>
+                    <div class="top__line_social">
+                        <ul>
+                            <li><a class="fb" href="#!"></a></li>
+                            <li><a class="tw" href="#!"></a></li>
+                            <li><a class="ytube" href="#!"></a></li>
+                        </ul>
+                    </div>
+                    <div class="top__line_pages">
+                        <a href="#!">Акции</a>
+                        <a href="#!">Вакансии</a>
+                        <a href="#!">Камера</a>
+                        <a href="#!">Контакты</a>
+                    </div>
+                    <div class="overlay" id="myNav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="header__phone-m">
+                            <span>0-800-757-554</span>
+                            <br>Бесплатно с мобильных</div>
+                        <a href="#!">Акции</a>
+                        <a href="#!">Вакансии</a>
+                        <a href="#!">Камера</a>
+                        <a href="#!">Контакты</a>
+                        <div class="m_adress">
+                            <a href="">Проспект Мира 87-б</a>
+                            <p>Работаем с 9:00 до 22:00</p>
+                            <p>Бесплатная доставка</p>
+                        </div>
+                        <div class="top__line_social-m">
+                            <ul>
+                                <li><a class="fb" href="#!"></a></li>
+                                <li><a class="tw" href="#!"></a></li>
+                                <li><a class="ytube" href="#!"></a></li>
+                            </ul>
+                        </div>
+                        <script>
+                        function openNav() {
+                            document.getElementById("myNav").style.width = "100%";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("myNav").style.width = "0%";
+                        }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="open__mobile_menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+                        <div class="menu_ic" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                    <div class="header__logo"><a href="#!"><img width="291" height="46" src="img/header/logo.png" alt=""></a></div>
+                    <div class="header__menu">
+                        <nav>
+                            <ul>
+                                <li><a href="">Пиццы</a></li>
+                                <li><a href="">Напитки</a></li>
+                                <li><a href="">Закуски</a></li>
+                                <li><a href="">Десерты</a></li>
+                            </ul>
+                            <div class="nav__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="header__phone">
+                        <span>0-800-757-554</span>
+                        <br>Бесплатно с мобильных
+                    </div>
+                    <div class="header__cart-active-m">
+                        <a class="cart__btn" href="#!"></a>
+                        <span class="cart__items_count">3</span>
+                    </div>
+                    <div class="header__cart-active">
+                        <a class="cart__btn" href="#!">225грн</a>
+                        <span class="cart__items_count">3</span>
+                    </div>
+                    <div hidden class="header__cart-empty"><a class="cart__btn" href="#!">Пусто</a></div>
+                </div>
+            </div>
+            <!-- container -->
+        </header>
+        <main class="main__content">
+            <div class="container">
+                <div class="row">
+                    <div class="order__wrapp">
+                        <h1>Ваша корзина</h1>
+                        <div class="order__menu">
+                            <div class="col-xs-12 col-md-7 col-lg-8">
+                                <!--  MENU_ITEM -->
+                                <div class="order__menu_item">
+                                    <div class="order__item_img"><img src="img/order/ord_pizza.png" alt=""></div>
+                                    <div class="order__item_tittle">
+                                        <h3>Вегетерианская</h3>
+                                        <div class="order__item_case">
+                                            <span>С бортиком, 30 см</span>
+                                            <span>Бесплатный соус</span>
+                                            <select name="" id="">
+                                                <option value="">сырный</option>
+                                                <option value="">сырный</option>
+                                                <option value="">сырный</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <span></span>
+                                    <div class="item__count">
+                                        <form>
+                                            <div class="value-button value-button-decrease" id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
+                                            <input type="number" id="number" value="0" />
+                                            <div class="value-button value-button-increase" id="increase" onclick="increaseValue()" value="Increase Value"></div>
+                                        </form>
+                                    </div>
+                                    <div class="order__item_price"><span>199</span>грн</div>
+                                    <div class="order__item_close">&times;</div>
+                                </div>
+                                <!--END  MENU_ITEM -->
+                                <!--  MENU_ITEM -->
+                                <div class="order__menu_item">
+                                    <div class="order__item_img"><img src="img/order/ord_pizza.png" alt=""></div>
+                                    <div class="order__item_tittle">
+                                        <h3>Вегетерианская</h3>
+                                        <div class="order__item_case">
+                                            <span>С бортиком, 30 см</span>
+                                            <span>Бесплатный соус</span>
+                                            <select name="" id="">
+                                                <option value="">сырный</option>
+                                                <option value="">сырный</option>
+                                                <option value="">сырный</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <span></span>
+                                    <div class="item__count">
+                                        <form>
+                                            <div class="value-button value-button-decrease" id="decrease" onclick="decreaseValue()" value="Decrease Value"></div>
+                                            <input type="number" id="number" value="0" />
+                                            <div class="value-button-increase value-button" id="increase" onclick="increaseValue()" value="Increase Value"></div>
+                                        </form>
+                                    </div>
+                                    <div class="order__item_price"><span>199</span>грн</div>
+                                    <div class="order__item_close">&times;</div>
+                                </div>
+                                <!--END  MENU_ITEM -->
+                                <div class="item__total_wrap">
+                                    <div class="item__total_promo">
+                                        <form>
+                                            <label>
+                                                <input placeholder="Купон на скидку" type="text">
+                                                <input type="submit" value="Применить">
+                                            </label>
+                                        </form>
+                                    </div>
+                                    <div class="item__total_sum">Итого:<span>500</span>грн</div>
+                                </div>
+                                <div hidden class="item__total_sum-m clearfix">
+                                    Итого: <span>500</span>грн
+                                    <label for="order_submit"></label>
+                                    <input id="order_submit" value="оформить заказ" type="submit">
+                                </div>
+                                <div class="back__link">
+                                    <a href="#!">Назад в меню</a></div>
+                            </div>
+                        </div>
+                        <div class="ordering">
+                            <div class="col-xs-12 col-md-5 col-lg-4">
+                                <div class="order__form_tittle">
+                                    <h3>Оформление заказа</h3></div>
+                                <div class="order__form">
+                                    <form id="rendered-form">
+                                        <div class="rendered-form">
+                                            <div class="fb-text form-group field-tel">
+                                                <label for="tel" class="fb-text-label"><span class="fb-required">*</span></label>
+                                                <input type="number" placeholder="телефон" class="form-control" name="tel" maxlength="20" id="tel" required="required" aria-required="true">
+                                            </div>
+                                            <div class="fb-text form-group field-name">
+                                                <label for="name" class="fb-text-label"></label>
+                                                <input type="text" placeholder="Имя" class="form-control" name="name" maxlength="1" id="name">
+                                            </div>
+                                            <div class="fb-text form-group field-street">
+                                                <label for="street" class="fb-text-label"></label>
+                                                <input type="text" placeholder="Улица (переулок, проспект)" class="form-control" name="street" id="street">
+                                            </div>
+                                            <div class="fb-text form-group field-house">
+                                                <label for="house" class="fb-text-label"></label>
+                                                <input type="text" placeholder="Дом" class="form-control" name="house" id="house">
+                                            </div>
+                                            <div class="fb-text form-group field-flat">
+                                                <label for="flat" class="fb-text-label"> </label>
+                                                <input type="number" placeholder="Квартира" class="form-control" name="flat" id="flat">
+                                            </div>
+                                            <div class="fb-text form-group field-porch">
+                                                <label for="porch" class="fb-text-label"> </label>
+                                                <input maxlength="5" type="number" placeholder="Подъезд" class="form-control" name="porch" id="porch">
+                                            </div>
+                                            <div class="fb-text form-group field-floor">
+                                                <label for="floor" class="fb-text-label"></label>
+                                                <input type="number" placeholder="Этаж" class="form-control" name="floor" id="floor">
+                                            </div>
+                                            <div class="fb-text form-group field-lease">
+                                                <label for="lease" class="fb-text-label"></label>
+                                                <input type="text" placeholder="Сдача: у меня ровно" class="form-control" name="lease" id="lease">
+                                            </div>
+                                            <div class="fb-text form-group field-comment">
+                                                <label for="comment" class="fb-text-label"></label>
+                                                <input type="text" placeholder="Комментарий (например, код домофона)" class="form-control" name="comment" id="comment">
+                                            </div>
+                                            <div class="call_me">
+                                                <input id="call" name="gender" type="checkbox">
+                                                <label for="call"></label>
+                                                <div class="checkmark">Обязательно позвоните мне</div>
+                                            </div>
+                                            <!-- call_me -->
+                                            <input type="submit" value="отправить заказ">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div hidden class="submit__mobile">
+                                    <input type="submit" value="отправить заказ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- container -->
+        </main>
+    </div><!-- site wrap -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__info">
+                        <div class="footer__info_wrap clearfix">
+                            <img src="img/footer/footer_logo.svg" alt="">
+                            <div class="footer__info_text">
+                                <span>© Моко Пицца, 2017</span>
+                                <br>
+                                <a href="#!">Правовая информация</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="tel:0-800-757-554">0-800-757-554</a>
+                        <a href="mailto:info@mokopizza.com">info@mokopizza.com</a>
+                    </div>
+                    <div class="footer__social">
+                        <ul>
+                            <li><a class="fb" href="#!"></a></li>
+                            <li><a class="tw" href="#!"></a></li>
+                            <li><a class="ytube" href="#!"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

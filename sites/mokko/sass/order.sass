@@ -1,0 +1,314 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+
+body
+
+	height: 100vh
+	display: flex
+
+	flex-direction: column
+
+input[type=number]
+	-moz-appearance: textfield
+
+
+.open__mobile_menu
+	margin-left: 15px
+.site__wrapp
+	// min-height: 100%
+	flex: 1 0 auto
+	
+
+
+
+
+	
+main
+	
+
+	
+
+
+.order__wrapp
+	
+
+	h1
+		margin-left: 30px
+.order__menu
+	margin-left: 15px
+	margin-right: 15px
+
+.order__item_case
+	font-family: Ubuntu-Regular
+	select
+		color: $accent
+.order__menu_item
+	background: #fff
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 2px
+
+.order__item_img
+	padding: 15px 15px 15px 20px
+.order__item_tittle
+	margin-right: auto
+	h3
+		
+		font-family: Ubuntu-Regular
+		font-size: 20px
+		margin: 20px 20px 5px 0
+		color: $accent  
+.order__item_case
+	span
+		color: #666
+		font-family: Ubuntu-Regular
+	select
+		outline: none
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		padding: 5px
+		border: none
+.item__count
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+.order__item_price
+	padding: 0 36px 0 50px
+	font-size: 15px
+	color: #333
+	span
+		font-size: 20px
+		font-family: Ubuntu-Bold
+.order__item_close
+	font-size: 30px
+	height: 30px
+	width: 30px
+	margin-bottom: 8px
+	margin-left: 30px
+	margin-right: 25px
+	color: #781214
+	font-weight: 600
+	cursor: pointer
+
+.item__total_wrap
+
+	background: #fff
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	height: 90px
+	margin-bottom: 35px
+	form
+
+		font-family: Ubuntu-Regular
+		margin-left: 30px
+		label
+			width: 288px
+			overflow: hidden
+			white-space: nowrap
+
+			
+		input[type=text]
+			width: 288px
+			height: 40px
+
+			border: 2px solid #e8e8e8
+			border-radius: 18px
+			background-color: #fff
+			padding: 10px 20px 10px 20px
+			font-size: 15px
+			
+		input[type=submit]
+			width: 121px
+			height: 32px
+			border-radius: 15px
+			background-color: #f2ac00
+			border: none
+			margin-left: -128px
+			
+
+
+.item__total_sum
+	margin-left: 123px
+	font-size: 20px
+	color: #111
+	font-family: Ubuntu-Regular
+	
+	>span
+		
+		padding-left: 10px
+		
+		font-family: Ubuntu-Bold
+.back__link
+	margin-bottom: 100px
+	a
+		text-decoration: none
+		color: #7a1618
+		margin-left: 25px
+	
+	&:before
+		content: ''
+		position: absolute
+		margin-top: 3px
+			
+		background:  url(../img/order/arr-back.svg) 0 0 no-repeat
+		width: 19px
+		height: 15px
+/* ORDER FORM STYLES */
+.order__form
+	background: #fff
+	padding: 30px
+	margin-bottom: 50px
+	input[type=text],input[type=tel],input[type=number]
+		border: none
+		border-bottom: 2px solid #e8e8e8
+		font-family: Ubuntu-Regular
+	input
+		&:focus
+			outline: 0
+
+.fb-text.form-group
+	margin-bottom: 20px
+	span.fb-required 
+		position: absolute
+		left: 60px
+		color: #7a1618
+		font-size: 20px
+		:focus
+			display: none
+			
+.order__form_tittle
+	border-radius: 3px 3px 0 0
+	background-color: #f2ac00
+	height: 93px
+	h3
+		font-size: 24px
+		font-family: Ubuntu-Bold
+		vertical-align: middle
+		line-height: 93px
+		padding-left: 30px
+		margin-top: 0
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		margin: 0
+
+.form-control
+	input
+		width: 100%
+.rendered-form
+	display: inline-flex
+	flex-wrap: wrap
+	overflow: hidden
+	justify-content: space-between
+	.field-tel
+		width: 65%
+		position: relative
+
+	
+	.field-name
+		width: 30%
+	.field-street
+		width: 65%
+	.field-house
+		width: 30%
+	.field-flat, .field-floor
+		width: 30%
+		input
+			max-width: 90px
+			
+
+	.field-floor
+		width: 30%
+		text-align: right
+		float: right
+
+	.field-porch
+		width: 30%
+		input
+			width: 100%
+	.field-lease, .field-comment
+		input
+			width: 300px
+	input[type=submit]
+		border: none
+		color: #fff
+		font-size: 18px
+		font-family: Ubuntu-Bold
+		background: $accent
+		text-transform: uppercase
+		padding: 20px 65px
+		border-radius: 28px
+		margin-top: 50px
+		margin-bottom: 40px
+.submit__mobile
+
+	input[type=submit]
+		border: none
+		color: #fff
+		font-size: 18px
+		font-family: Ubuntu-Bold
+		background: $accent
+		text-transform: uppercase
+		padding: 20px 65px
+		border-radius: 28px
+		margin-top: 50px
+		margin-bottom: 40px
+
+
+.call_me
+	display: block
+	margin: 0 auto
+	width: 100%
+	text-align: center
+	[type=checkbox]
+		display: none
+	.checkmark
+		display: inline-block  
+
+	label
+		height: 15px
+		width: 15px
+		border: 2px solid $accent
+		border-radius: 50%
+		display: inline-block
+		top: 2px
+		position: relative
+
+	[type=checkbox]:checked
+		& + div.checkmark
+			background: #f2ac00
+			
+
+	[type=checkbox]:checked ~ label
+			background: #f2ac00  
+
+ 
+	input:checked ~ .checkmark
+		font-family: Ubuntu-Bold 
+		
+
+
+
+.footer
+
+	flex-shrink: 0
+
+	
+
+@import "order_media" // Всегда в конце

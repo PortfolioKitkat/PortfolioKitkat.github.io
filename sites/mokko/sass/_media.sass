@@ -1,0 +1,188 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.header__wrapper
+		flex-wrap: wrap
+		justify-content: space-around
+@media (min-width: 993px) and (max-width: 1199px)
+	/**/
+	.header__logo
+		width: 100%
+		text-align: center
+		margin: 20px 0
+	.top__line_wrap
+		width: 100vw
+		position: relative
+		left: 50%
+		right: 50%
+		margin-left: -50vw
+		margin-right: -50vw
+		justify-content: space-around
+	.item__option ul li label
+		padding: 8px 0px 25px 37px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.header__logo
+		margin-right: auto
+		margin-left: 25px
+	.content__item
+		width: 48%
+	.overlay
+		display: block
+	.top__line_pages
+		display: none
+	.top__line_info, .top__line_social
+		display: none   
+	.open__mobile_menu
+		display: block
+	.header__wrapper
+		flex-wrap: wrap
+		justify-content: space-between
+	.slider li span h1
+		top: 30px
+		left: 120px
+		font-size: 3rem
+		line-height: 3.5rem
+	.slider .text h1
+		font-size: 3rem
+		line-height: 3rem
+	.header__menu, .header__phone
+		display: none
+	.top__line
+		height: 0
+	.header__cart-active
+		display: none
+	.header>.container
+		width: 100%
+	.item__price, .item__price-checked
+		padding: 10px 0
+	.header__cart-active-m
+		display: block
+		margin-top: 7px
+	.item__option
+		text-align: center
+		display: -webkit-inline-flex
+		display: -moz-inline-flex
+		display: -ms-inline-flex
+		display: -o-inline-flex
+		display: inline-flex
+	.item__size
+		margin-left: 0
+		text-align: center
+
+	.item__option 
+		margin-left: 0
+		width: 100%
+		justify-content: center
+		form
+			padding: 10px 5px
+	.header__wrapper	
+		top: 0
+		position: fixed
+		z-index: 999
+		margin-top: 0
+		-ms-flex-wrap: wrap
+		background: #fff
+		height: 100px
+		margin-top: 0
+		width: 100vw
+		// position: relative
+		left: 50%
+		right: 50%
+		margin-left: -50vw
+		margin-right: -50vw
+		padding-left: 30px
+		padding-right: 30px
+	header.header
+		margin-top: 100px
+	.overlay .closebtn
+		top: 110px
+	.overlay
+		margin-top: 100px
+	.footer__wrapper
+		justify-content: space-around
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.topnav
+		a
+			&:not(:first-child)
+				display: none
+	.topnav
+		&.responsive
+			position: relative
+	.topnav.responsive a 
+		float: none
+		display: block
+		text-align: left
+
+	.content__item
+		width: 100%
+	.header__phone
+		display: none
+	.main__content_wrapper
+		margin: 30px 0
+	.slider .text h1
+
+		font-size: 2.4rem
+		line-height: 2.4rem
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.slider
+		display: none
+@media only screen and (max-width : 450px)
+	/**/
+	.header__logo
+		order: 3
+		margin: 0 auto
+		width: 100%
+		text-align: center
+		margin-top: 20px
+	.header__wrapper
+		height: 120px
+	.overlay
+		margin-top: 100px
+	
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+	
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
