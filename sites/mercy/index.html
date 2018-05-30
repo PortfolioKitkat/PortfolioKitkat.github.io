@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="full__page">
+        <header class="header">
+            <div class="header_wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="header__top_line">
+                            <div class="header__support_txt">
+                                <p>Нужны непортящиеся продукты, одежда, обувь,
+                                    <br> предметы личной гигиены и помощь волонтеров.</p>
+                            </div>
+                            <div class="main-help__btn"><a href="#popup" class="modal__btn">Помочь дому</a></div>
+                            <div class="header__count"><span data-count="2200" class="counter">1 </span> <span data-count="2200" class="counter"> 345</span> <span data-count="2200" class="counter"> 999</span>
+                                <p>пожертвовали дому в марте</p>
+                            </div>
+                        </div>
+                        <div class="header__bottom_line">
+                            <div class="site__logo"><a href="index.html" class="site_logo"></a></div>
+                            <div class="header__nav ">
+                                <nav>
+                                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                                    <ul class="menu">
+                                        <li><a class="active" href="">Главная</a></li>
+                                        <li><a href="home.html">О доме</a></li>
+                                        <li><a href="events.html">Мероприятия</a></li>
+                                        <li><a href="partner.html">Партнерам</a></li>
+                                        <li><a href="#!">Контакты</a></li>
+                                        <li><a href="history.html">Истории из дома</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="site__phone"><a href="">8 913 945 95 26</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- END HEADER -->
+        <section class="we__help">
+            <div class="container">
+                <div class="row">
+                    <div class="wh__wrapper">
+                        <div class="wh__top-wrap">
+                            <div class="wh__text">
+                                <h1>Мы помогаем бездомным<br> старикам и инвалидам <br>обрести дом</h1>
+                                <p>Рублей пожертвовано на помощь бездомным
+                                    <br> людям. Помогаем самым беззащитным группам
+                                    <br> нашего общества.</p>
+                            </div>
+                            <div class="wh__count">
+                                <div class="count__sum">
+                                    <script>
+                                        $('.counter').counterUp({
+                                            delay: 10,
+                                            time: 1000
+                                        });
+                                    </script>
+                                    <span>1 345 999</span>
+                                    <p>пожертвовали дому в марте</p>
+                                </div>
+                                <div class="modal__btn"><a href="#popup" class="modal__btn modal__btn-white">Пожертвовать</a></div>
+                            </div>
+                        </div>
+                        <div id="popup" class='modal' role="dialog" aria-labelledby="Modal title" aria-describedby="Modal description">
+                            <div class="modal-content">
+                                <div class="header">
+                                    <a href="#" id="close">
+                                        <div class="box box3">
+                                            <svg viewbox="0 0 40 40">
+                                                <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <h2>Projects</h2>
+                                </div>
+                                <div class="copy">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="overlay"></div>
+                            </a>
+                        </div>
+
+                        <div class="history_slider__wrapp">
+                             <div class="history_slider__tittle">
+                                <p>Истории из дома:</p>
+                            </div>
+                            <div class="wh__house__history_slider">
+                                <div class="slide__item">
+                                    <a target="_blank" href="history.html#vp-1">
+                                        <div class="slide__item_img">
+                                            <img src="img/main/wh_bezdomniy1.jpg" alt="">
+                                        </div>
+                                        <div class="slide__item_text"><span>Василий</span>
+                                            <p>Нужна еда</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="slide__item">
+                                    <a target="_blank" href="history.html#vp-2">
+                                        <div class="slide__item_img">
+                                            <img src="img/main/wh_bezdomniy1.jpg" alt="">
+                                        </div>
+                                        <div class="slide__item_text"><span>Василий</span>
+                                            <p>Нужна еда</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="slide__item">
+                                    <a target="_blank" href="history.html#vp-2">
+                                        <div class="slide__item_img">
+                                            <img src="img/main/wh_bezdomniy1.jpg" alt="">
+                                        </div>
+                                        <div class="slide__item_text"><span>Василий</span>
+                                            <p>Нужна еда</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="slide__item">
+                                    <a target="_blank" href="history.html#vp-2">
+                                        <div class="slide__item_img">
+                                            <img src="img/main/wh_bezdomniy1.jpg" alt="">
+                                        </div>
+                                        <div class="slide__item_text"><span>Василий</span>
+                                            <p>Нужна еда</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="slide__item">
+                                    <a target="_blank" href="history.html#vp-2">
+                                        <div class="slide__item_img">
+                                            <img src="img/main/wh_bezdomniy1.jpg" alt="">
+                                        </div>
+                                        <div class="slide__item_text"><span>Василий</span>
+                                            <p>Нужна еда</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="slide__item">
+                                    <a target="_blank" href="history.html#vp-2">
+                                        <div class="slide__item_img">
+                                            <img src="img/main/wh_bezdomniy1.jpg" alt="">
+                                        </div>
+                                        <div class="slide__item_text"><span>Василий</span>
+                                            <p>Нужна еда</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end slider -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- full page -->
+    <section class="support">
+        <div class="support__wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="support__intro">
+                        <div class="support__intro_video">
+                            <iframe width="100%" height="320" src="https://www.youtube.com/embed/x4FKcAOkGj8?ecver=1" frameborder="0" encrypted-media "></iframe>
+                            </div>
+                            <div class="support__intro_text ">
+                                <p>Бессознательное притягивает эгоцентризм. Большую роль в популяризации психодрамы сыграл институт социометрии, который интеллект начинает понимающий аутотренинг, таким образом осуществляется своего рода связь с темнотой бессознательного.</p> 
+                                <p>Толпа, конечно, традиционно дает понимающий страх. Связь, по определению, аннигилирует гендерный стимул.</p>
+                            </div>
+                        </div>
+                        <div class="support__quote ">
+                            <p>«Бездомные — это люди, которые оказались на улице из-за семейных конфликтов, мошенничества, потери работы и проблем со здоровьем. Это те, кому нужна помощь.»</p>
+                        </div>
+                        <div class="support__devider ">
+                            <div class="for__homeless ">
+                                <div class="for__homeless_img "></div>
+                                <div class="for__homeless_tittle ">Бездомным</div>
+                                <div class="for__homeless_text ">
+                                    <p>Толпа, конечно, традиционно дает понимающий страх. Связь, по определению, аннигилирует гендерный стимул.</p>
+                                </div>
+                            </div>
+                            <div class="for__partners ">
+                                <div class="for__partners_img "></div>
+                                <div class="for__partners_tittle ">Партнерам</div>
+                                <div class="for__partners_text ">
+                                    <p>Толпа, конечно, традиционно дает понимающий страх. Связь, по определению, аннигилирует гендерный стимул.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about__home ">
+            <div class="about__home_wrapper ">
+                <div class="container ">
+                    <div class="about__home_container ">
+                        <div class="row ">
+                            <div class="about__home_tittle ">
+                                <h3>О Доме</h3>
+                            </div>
+                            <div class="about__home_slider ">
+                                <div class="home_slider_item ">
+                                    <div class="home_slider__tittle "><h3>Миссия</h3></div>
+                                    
+                                    <p>В связи с этим нужно подчеркнуть, что аномия возможна. Роджерс определял терапию как, воспитание гомогенно иллюстрирует генезис. Мышление, иcходя из того, что начинает депрессивный закон.</p>
+                                </div>
+                                <div class="home_slider_item ">
+                                    <div class="home_slider__tittle "><h3>Миссия</h3></div>
+                                    <p>В связи с этим нужно подчеркнуть, что аномия возможна. Роджерс определял терапию как, воспитание гомогенно иллюстрирует генезис. Мышление, иcходя из того, что начинает депрессивный закон.</p>
+                                </div>
+                                <div class="home_slider_item ">
+                                   <div class="home_slider__tittle "><h3>Миссия</h3></div>
+                                    <p>В связи с этим нужно подчеркнуть, что аномия возможна. Роджерс определял терапию как, воспитание гомогенно иллюстрирует генезис. Мышление, иcходя из того, что начинает депрессивный закон.</p>
+                                </div>
+                            </div>
+                            <div class="read__more_btn "><a href="history.html " class="modal__btn-white ">Читать больше</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!--PAGE WRAPPER  -->
+    <!-- FOOTER -->
+    <footer class="footer footer-main ">
+        <div class="container ">
+            <div class="row ">
+                <div class="footer__wrapper ">
+                    <div class="site__logo footer__logo "><a href="index.html " class="site_logo "></a></div>
+                    <div class="site__nav site__nav-footer ">
+                        <nav>
+                            <ul>
+                                <li><a class="active " href=" ">Главная</a></li>
+                                <li><a href="home.html ">О доме</a></li>
+                                <li><a href="events.html ">Мероприятия</a></li>
+                                <li><a href="partner.html ">Партнерам</a></li>
+                                <li><a href="#! ">Контакты</a></li>
+                                <li><a href="history.html ">Истории из дома</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="site__phone "><a href=" ">8 913 945 95 26</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER -->
+
+   <!--  <script  src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js "></script> -->
+
+   
+    <script  src="js/scripts.min.js "></script>
+</body>
+
+</html>
